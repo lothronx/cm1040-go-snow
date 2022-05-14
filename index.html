@@ -4,41 +4,28 @@
      
     <title>GoSnow - A place for great family fun</title>
       
-      <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
- 
-        }
-
-        li {
-          display: inline;
-        }
-          </style>
+      
   </head>
   <body>
+      <header>
       <!-- nav bar -->
       <div>
         <nav>
-              <ul>
-              <h1>
+          <ul>
+            <!-- Main logo with link to home page -->
             <li>
-                  <a  href="index.html">
-              <img src="assets/images/logo.png" alt="" >
-                              </a>
-                  </li>
-                      </h1>
-              <li>
-            <a href="things-to-do.html">Things To Do</a>
-                  </li>
+              <a  href="index.html"><img src="assets/images/logo.png" alt="" ></a>
+            </li>
+            <li>
+                <a href="things-to-do.html">Things To Do</a>
+            </li>
             <li>
                   <a href="plan-your-visit.html">Plan Your Visit</a>
-                  </li>
-                  <li>
-            <a href="booking.html">Book Now</a>
-                  </li>
-            </ul>
+            </li>
+            <li>
+                <a href="plan-your-visit.html#booking">Book Now</a>
+            </li>
+        </ul>
          
             
             
@@ -46,6 +33,7 @@
             
         </nav>
       </div>
+      </header>
       <hr>
 <!-- secondard nav bar -->
       <div>
@@ -61,21 +49,28 @@
 
       <!-- nav bar end -->
       
-      <!-- Main banner -->
-    <div class="image-slider-section">
-        <img src="assets/images/main-banner.jpg" alt="main banner" width="100%" height="500">
+      <!-- Main banner with video -->
+    <div>
+        <video width="99.9%" autoplay loop muted playsinline>
+            <source src="assets/videos/snowboard.mp4" type="video/mp4">
+            <!-- catch if html5 is not supported -->
+            Your browser does not support HTML5 video.       
+            <a href="assets/videos/snowboard.mp4">Click here to view original Video</a>
+        </video>
+        <!-- overlay text with offer and button for buying ticket -->
         <div>
-            <h4>20% Special Offer ends in 2 Days</h4>
+            <h1>20% Special Offer ends in 2 Days</h1>
             <button>Click Here to Buy Tickets Now</button>
         </div>
     </div>
-      <div>
+    <div>
+      <h2>Enjoy the real ice and snow</h2>
       <p>Looking to have some one-of-a-kind fun? Look no further! At GoSnow, we are committed to providing nothing but safe and unforgettable adventures!</p>
-      </div>
+    </div>
     
     <div class="second-section">
-    <h4>Enjoy the real ice and snow</h4>
-    <p>We have snow and ice all around the year</p>
+    
+    
     <div class="attraction1">
     <img src="" alt="attraction1">
         <h6>Ice Sculptures</h6>
@@ -125,11 +120,12 @@ GoSnow is globally rated one of the best theme parks, boasting its unique and un
 </div>
 
 <!-- Footer -->
-
+<footer>
 <div>
 <p>Copyrights © 2022 All Rights Reserved by the park.
-Website Developed By Yue Wu, Myo Min Khaing, Paige Goetsch,  Fazley Chowdhury, Michael Parker, and mohab metwally.</p>
+Website Developed By Yue Wu, Myo Min Khaing, Paige Goetsch,  Fazley Chowdhury, Michael Parker, and mohab metwally. <a href="mailto:webmaster@gosnow.com">webmaster@gosnow.com</a></p></p>
 </div>
+</footer>
 
 <!-- Footer Banner-->
 <hr>
