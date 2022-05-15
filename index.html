@@ -1,136 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--basic information-->
+    <link rel="icon" href="assets/images/logo.png">
     <title>GoSnow - A place for great family fun</title>
-      
-      
-  </head>
+    <meta name="description" content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!">
+    <meta name="keywords" content="theme park, skiing, snowboard, ice sculpture">
+    <meta name="author" content="Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury">
+    <!--open graph tags-->
+    <meta property="og:title" content="Explore GoSnow today and enjoy 20% off">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:description" content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!">
+    <!--robots tag-->
+    <meta name="robots" content="index, nofollow">
+    <!--include the common header and footer using jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script> 
+      $(function(){
+        $("#header").load("assets/header_and_footer/header.html"); 
+        $("#footer").load("assets/header_and_footer/footer.html"); 
+      });
+    </script> 
+  </head> 
+
   <body>
-      <header>
-      <!-- nav bar -->
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Section 1: main banner with video -->
+    <div>
+      <video width="99.9%" autoplay loop muted playsinline>
+        <source src="assets/videos/snowboard.mp4" type="video/mp4">
+        <!-- catch if html5 is not supported -->
+        Your browser does not support HTML5 video.       
+        <a href="assets/videos/snowboard.mp4">Click here to view original Video</a>
+      </video>
+      <!-- overlay text with offer and button for buying ticket -->
       <div>
-        <nav>
-          <ul>
-            <!-- Main logo with link to home page -->
-            <li>
-              <a  href="index.html"><img src="assets/images/logo.png" alt="" ></a>
-			  <p>Opening today 9:00 AM - 6:00 PM</p>
-            </li>
-            <li>
-                <a href="things-to-do.html">Things To Do</a>
-            </li>
-            <li>
-                  <a href="plan-your-visit.html">Plan Your Visit</a>
-            </li>
-            <li>
-                <a class="" href="plan-your-visit.html#booking">Book Now</a>
-            </li>
-        </ul>
-         
-            
-            
-            
-            
-        </nav>
+        <h2>20% Special Offer ends in 2 Days</h2>
+        <button>Click Here to Buy Tickets Now</button>
       </div>
-      </header>
-      <hr>
+    </div>
 
-
-      <!-- nav bar end -->
-      
-      <!-- Main banner with video -->
+    <!-- Section 2: three major attractions -->
     <div>
-        <video width="99.9%" autoplay loop muted playsinline>
-            <source src="assets/videos/snowboard.mp4" type="video/mp4">
-            <!-- catch if html5 is not supported -->
-            Your browser does not support HTML5 video.       
-            <a href="assets/videos/snowboard.mp4">Click here to view original Video</a>
-        </video>
-        <!-- overlay text with offer and button for buying ticket -->
-        <div>
-            <h1>20% Special Offer ends in 2 Days</h1>
-            <button>Click Here to Buy Tickets Now</button>
+      <!-- brief intro -->
+      <div>
+        <h2>Enjoy the real ice and snow</h2>
+        <p>Looking to have some one-of-a-kind fun? Look no further! At GoSnow, we are committed to providing nothing but safe and unforgettable adventures!</p>
+      </div>
+      
+      <!-- Three colomns of major attractions-->
+      <div>
+        <!--Major attraction 1: Ice Sculptures -->
+		    <div class="index-attractions">
+			    <img src="assets/images/IceSculpture.JPG" alt="Ice Sculptures">
+				  <h3>Ice Sculptures</h3>
+			    <p>Our beautiful display of unique and delicate ice sculptures are something to be seen!</p>
+		    </div>
+
+        <!--Major attraction 2: Ice Rink -->
+        <div class="index-attractions">
+          <!--Image credit: Getty Images/Cultura RF-->
+          <img src="assets/images/IceRink.JPG" alt="Ice Rink">
+          <h3>Ice Rink</h3>
+          <p>Our Ice Rink is suitable for all skating levels, with our famous ‘disco’ mode for an extra bit of fun!</p>
+		    </div>
+
+        <!--Major attraction 3: Snowboarding -->
+        <div class="index-attractions">
+          <img src="assets/images/Snowboarding.JPG" alt="Snowboarding">
+          <h3>Snowboarding</h3>
+          <p>Our snowboarding ledge is suitable for the whole family, safe enough to ensure no one gets left out!</p>
+		    </div>
+      </div>
+    </div>
+    <div class="attraction2">
+    <img src="" alt="attraction2">
+        <h6>Ice Rink</h6>
+    <p>Our Ice Rink is suitable for all skating levels, with our famous ‘disco’ mode for an extra bit of fun!</p>
+      </div>
         </div>
-    </div>
-    <div>
-      <h2>Enjoy the real ice and snow</h2>
-      <p>Looking to have some one-of-a-kind fun? Look no further! At GoSnow, we are committed to providing nothing but safe and unforgettable adventures!</p>
-    </div>
-    <!-- Section with attractions in 3 tiles -->
-    <div class="second-section">
-		<div>
-			<img src="assets/images/ice-sculpture.png" alt="Ice Sculptures">
-				<h3>Ice Sculptures</h3>
-			<p>Our beautiful display of unique and delicate ice sculptures are something to be seen!</p>
-		</div>
-
-		<div>
-			<img src="assets/images/ice-rink.png" alt="Ice Rink">
-			<h3>Ice Rink</h3>
-			<p>Our Ice Rink is suitable for all skating levels, with our famous ‘disco’ mode for an extra bit of fun!</p>
-		</div>
-
-		<div>
-			<img src="assets/images/snow-boarding.png" alt="snowboarding">
-			<h3>Snowboarding</h3>
-			<p>Our snowboarding ledge is suitable for the whole family, safe enough to ensure no one gets left out!</p>
-		</div>
+    <div class="attractio3">
+    <img src="" alt="attraction3">
+    <h6>Snowboarding</h6>
+    <p>Our snowboarding ledge is suitable for the whole family, safe enough to ensure no one gets left out!</p>
+        </div>
     
-    </div>
-    
-    <!--third section with Finer details -->
+    <!-- Section 3: about the park -->
+    <article>
+      <!-- Left: Park picture -->
+      <div>
+			  <img src="assets/images/AboutGoSnow.jpeg" alt="About GoSnow">
+		  </div>
+      <!-- Right: Park introduction -->
+		  <div>
+        <h2>About GoSnow</h2>
+        <p>
+        <b>GoSnow</b> is globally rated one of the best theme parks, boasting its unique and undeinaibly awesome features! Along with our renowned ice rink, which allows free-skating and an ice disco, we have many other activities for the whole family to partake in. While ensuring maximum fun is being had, GoSnow has emphasized how seriously we take our safety standards, being fully equipped with excellent paramedic services as well as safety precautions taken at every one of our features. GoSnow prides itself in the versatility of our theme park being both child and adult friendly simultaneously. We hope to see you at our theme park, so we can deliver yo with the experience of a lifetime!
+        </p>
+		  </div>
+    </article>
+
+    <!-- Section 4: customer reviews -->
+    <!-- Three coloums of customer reviews -->
     <div>
-    	<div>
-			<img src="assets/images/finer-detail-snowflake.png">
-		</div>
-		<div>
-			<h3>Looking At The Finer Details</h3>
-			<p>
-			GoSnow is globally rated one of the best theme parks, boasting its unique and undeinaibly awesome features! Along with our renowned ice rink, which allows free-skating and an ice disco, we have many other activities for the whole family to partake in. While ensuring maximum fun is being had, GoSnow has emphasized how seriously we take our safety standards, being fully equipped with excellent paramedic services as well as safety precautions taken at every one of our features. GoSnow prides itself in the versatility of our theme park being both child and adult friendly simultaneously. We hope to see you at our theme park, so we can deliver yo with the experience of a lifetime!
-			</p>
-		</div>
+      <!-- Customer review 1-->
+      <div>
+        <p>“The perfect escape from city life! Will definitely be coming back again soon!”</p>
+        <img src="assets/images/Peige.jpg" alt="Paige Goetsch"> Paige Goetsch 
+      </div>
+      <!-- Customer review 2-->
+      <div>
+        <p>"A wonderful place for the whole family. My children absolutely loved it. Definitely recommended!"</p>
+        <img src="assets/images/Fazley.jpg" alt="Fazley Chowdhury"> Fazley Chowdhury
+      </div>
+      <!-- Customer review 3-->
+      <div>
+        <p>"One of the best experiences of my life! The disco ice rink is a super feature."</p>
+        <img src="assets/images/Yue.JPG" alt="Yue Wu"> Yue Wu
+      </div>
     </div>
 
-<!-- Guest review comments section -->
-<div>
-    
-    <div>
-    <p>"One of the best experiences of my life! The disco ice rink is a super feature."</p>
-        <img src="assets/images/george.png" alt="George"> George
-    </div>
-    <div>
-    <p>“The perfect escape from city life! Will definitely be coming back again soon!”</p>
-       <img src="assets/images/ivana.png" alt="Ivana"> Ivana
-    </div>
-    <div>
-    <p>"A wonderful place for the whole family. My children absolutely loved it. Definitely recommended!"</p>
-        <img src="assets/images/hannah.png" alt="Hannah"> Hannah
-    </div>
+    <!-- Footer -->
+    <footer id="footer"></footer>
 
-    
-</div>
-
-<!-- Footer -->
-<hr>
-<footer>
-<div>
-<p>Copyrights © 2022 All Rights Reserved by the park.
-	Website Developed By Yue Wu, Myo Min Khaing, Paige Goetsch,  Fazley Chowdhury, Michael Parker, and mohab metwally. <a href="mailto:webmaster@gosnow.com">webmaster@gosnow.com</a></p>
-</div>
-</footer>
-
-<!-- Footer Banner-->
-<div>
-    <h3>Buy tickets today and enjoy 20% off</h3>
-    
-    <button>Book Now</button>
-</div>
-
-
-
-
-      
   </body>
 </html>
