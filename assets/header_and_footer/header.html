@@ -1,14 +1,25 @@
 <header>
-    <!-- logo with link to home page -->
-    <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo"></a>
-    <p>Opening today <time>9:00 AM</time> - <time>6:00 PM</time></p>
-    <!-- main nav bar -->
-    <nav>
-      <ul>
-        <li><a href="things-to-do.html">Things To Do</a></li>
-        <li><a href="plan-your-visit.html">Plan Your Visit</a></li>
-        <li><a href="plan-your-visit.html#booking"><button class="book-button">Book Now</button></a></li>
-      </ul>
-    </nav>
+  <nav class="navbar navbar-fixed-top navbar-expand-lg bg-body">
+    <div class="container-fluid">
+
+      <!-- logo with link to home page -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" height="60"></a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <span class="navbar-text small">Opening today <time>9:00 AM</time> - <time>6:00 PM</time></span>
+        <ul class="nav navbar-nav justify-content-end">
+          <li class="nav-item"><a class="nav-link" href="things-to-do.html">Things To Do</a></li>
+          <li class="nav-item"><a class="nav-link" href="plan-your-visit.html">Plan Your Visit</a></li>
+        </ul>
+        <a href="plan-your-visit.html#booking"><button class="btn btn-primary navbar-btn">Book Now</button></a>
+      </div>
+      
+    </div>
+  </nav>
 </header>
-<hr>

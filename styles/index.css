@@ -1,6 +1,18 @@
 /*Index.html CSS-----------------------------------*/
+
 #brief-intro{
     color: var(--blue);
+}
+#attractions .card-body{
+    background-color: var(--blue);
+}
+
+#attractions .card-title{
+    color: var(--white);
+}
+
+#attractions .card-text{
+    color: var(--whiteOpaque);
 }
 
 #about-park{
@@ -14,14 +26,3 @@
     text-indent: 32px;
 }
 
-.card-body{
-    background-color: var(--blue);
-}
-
-.card-title{
-    color: var(--white);
-}
-
-.card-text{
-    color: var(--whiteOpaque);
-}

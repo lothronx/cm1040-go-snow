@@ -35,8 +35,6 @@
   </head> 
 
   <body>
-	  <div class="container-fluid">
-	  
     <!-- Header -->
     <header id="header"></header>
 
@@ -51,16 +49,16 @@
         <!-- overlay text with offer and button for buying ticket -->
         <div class="card-img-overlay">
             <h1 class="card-title">20% Special Offer<br>Ends In 2 Days</h1>
-            <button type="button" class="btn btn-primary">Click Here to Buy Tickets Now</button>
+            <button type="button" class="btn btn-book">Click Here to Buy Tickets Now</button>
         </div>
     </div>
 
     <!-- Section 2: three major attractions -->
-  
+    <div id="attractions" class="container-fluid">
       <!-- brief intro -->
-      <div class="row" id="brief-intro">
+      <div id="brief-intro">
         <h2>Enjoy the real ice and snow</h2>
-        <p>Looking to have some one-of-a-kind fun? Look no further! At GoSnow, we are committed to providing nothing but safe and unforgettable adventures!</p>
+        <p class="big-text">Looking to have some one-of-a-kind fun? Look no further! At GoSnow, we are committed to providing nothing but safe and unforgettable adventures!</p>
       </div>
       
       <!-- Three colomns of major attractions-->
@@ -98,48 +96,52 @@
           </div>
         </div>
       </div>
-
+    </div>
 
     <!-- Section 3: about the park -->
-    <article id="about-park">
+    <div id="about-park" class="container-fluid">
+    <div class="row">
       <!-- Left: Park picture -->
-      <div>
+      <div class="col">
 			  <img src="assets/images/AboutGoSnow.jpeg" alt="About GoSnow">
 		  </div>
       <!-- Right: Park introduction -->
-		  <div>
+		  <div class="col">
         <h2>About GoSnow</h2>
         <p>
         <b>GoSnow</b> is globally rated one of the best theme parks, boasting its unique and undeinaibly awesome features! Along with our renowned ice rink, which allows free-skating and an ice disco, we have many other activities for the whole family to partake in. While ensuring maximum fun is being had, GoSnow has emphasized how seriously we take our safety standards, being fully equipped with excellent paramedic services as well as safety precautions taken at every one of our features. GoSnow prides itself in the versatility of our theme park being both child and adult friendly simultaneously. We hope to see you at our theme park, so we can deliver yo with the experience of a lifetime!
         </p>
 		  </div>
-    </article>
+    </div>
+    </div>
 
     <!-- Section 4: customer reviews -->
     <!-- Three coloums of customer reviews -->
-    <div>
+    <div id="customer-reviews" class="container-fluid">
+    <div class="row">
       <!-- Customer review 1-->
-      <div>
-        <blockquote>“The perfect escape from city life! Will definitely be coming back again soon!”</blockquote>
-        <img src="assets/images/Peige.jpg" alt="Paige Goetsch pic"> 
+      <div class="col card">
+        <blockquote class="card-body">“The perfect escape from city life! Will definitely be coming back again soon!”</blockquote>
+        <img src="assets/images/Peige.jpg" class="img-circle img-responsive" alt="Paige Goetsch pic"> 
         <p>Paige Goetsch</p>
       </div>
       <!-- Customer review 2-->
-      <div>
-        <blockquote>"A wonderful place for the whole family. My children absolutely loved it. Definitely recommended!"</blockquote>
-        <img src="assets/images/Fazley.jpg" alt="Fazley Chowdhury pic"> 
+      <div class="col card">
+        <blockquote class="card-body">"A wonderful place for the whole family. My children absolutely loved it. Definitely recommended!"</blockquote>
+        <img src="assets/images/Fazley.jpg" class="img-circle img-responsive" alt="Fazley Chowdhury pic"> 
         <p>Fazley Chowdhury</p>
       </div>
       <!-- Customer review 3-->
-      <div>
-        <blockquote>"One of the best experiences of my life! The disco ice rink is a super feature."</blockquote>
-        <img src="assets/images/Yue.JPG" alt="Yue Wu pic"> 
+      <div class="col card">
+        <blockquote class="card-body">"One of the best experiences of my life! The disco ice rink is a super feature."</blockquote>
+        <img src="assets/images/Yue.JPG" class="img-circle img-responsive" alt="Yue Wu pic"> 
         <p>Yue Wu</p>
       </div>
+    </div>
     </div>
 
     <!-- Footer -->
     <footer id="footer"></footer>
-</div>
+
   </body>
 </html>

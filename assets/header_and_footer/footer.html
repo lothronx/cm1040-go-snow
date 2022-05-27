@@ -1,33 +1,49 @@
 <hr>
 <footer>
     <!--contact information, legal information, and bottom nav bar-->
-    <div>
+    <div class="container-fluid">
+    <div class="row">
         <!--logo-->
-        <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo"></a>
+        
+            <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo"></a>
+        </div>
         <!--contact information-->
+        <div class="col">
         <p>
             <b>Contact information</b><br>
             Address: Senate House, Malet St, London WC1E 7HU, United Kingdom<br>
             Phone: +44 20 7862 8000<br>
-            Email: <a href="mailto:CustomerService@GoSnow.com">CustomerService@GoSnow.com</a>
+            Email: <a href="mailto:CustomerService@GoSnow.com" class="link-info">CustomerService@GoSnow.com</a>
         </p>
+        </div>
         <!--legal information-->
+        <div class="col">
         <p>
             <b>Legal</b><br>
             <a href="">Term & Conditions</a><br>
             <a href="">Cookies</a><br>
             <a href="">Privacy Policy</a><br>
         </p>
+        </div>
         <!--bottom navigation-->
-        <nav>
-            <a href="things-to-do.html"><button>Things To Do</button></a>
-            <a href="plan-your-visit.html"><button>Plan Your Visit</button></a>
-            <a href="plan-your-visit.html#booking"><button class="book-button">Book Now</button></a>
+        <div class="col">
+        <nav class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="things-to-do.html"><button type="button" class="btn btn-outline-primary">Things To Do</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="plan-your-visit.html"><button type="button" class="btn btn-outline-primary">Plan Your Visit</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="plan-your-visit.html#booking"><button type="button" class="btn btn-book">Book Now</button></a>
+            </li>
         </nav>
+        </div>
+    </div>
     </div>
 
     <!--copyright information and social media buttons-->
-    <div>
+    <div class="container-fluid">
         <!--copyright information-->
         <p>Copyrights © 2022 All Rights Reserved by GoSnow.<br>
         Website Developed By Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury.</p>
@@ -42,6 +58,6 @@
     <!--bottom ad-->
     <div>
         <h3>Buy tickets today and enjoy 20% off</h3>
-        <button class="book-button">Book Now</button>
+        <button class="btn btn-book">Book Now</button>
     </div>
 </footer>
