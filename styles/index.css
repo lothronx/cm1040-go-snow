@@ -1,4 +1,10 @@
 /*Index.html CSS-----------------------------------*/
+.hero{
+    height: 40vw;
+}
+.hero-text{
+    font-size: 4vw;
+}
 
 #major-attractions{
     color: var(--blue);
