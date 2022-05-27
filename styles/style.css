@@ -1,0 +1,92 @@
+/*Custom Fonts-------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400&family=Montserrat+Alternates:wght@400;500;600&display=swap');
+
+:root {
+/*color scheme------------------------------------*/
+    --red: #C24336;
+    --blue: #4E82C0;
+    --blueOpaque: #4E82C0CC;
+    --white: #FFFFFF;
+    --whiteOpaque: #FFFFFFCC;
+    --gray: #434343;
+    --grayOpaque: #434343CC;
+    --grayBackground: #E5E5E54D;
+  }
+
+/*Common CSS-------------------------------------*/
+body {
+    font-size: 100%;
+}
+
+h1{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 20%;
+
+    font-family: 'Monoton', cursive;
+    font-size: 8vw;
+    line-height: 125%;
+    text-align: center;
+    word-spacing: 15px;
+    color: var(--whiteOpaque);
+}
+
+h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 2.6em;
+    line-height: 125%;
+    text-shadow: 2px 2px 1px var(--grayBackground);
+}
+
+h3{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    line-height: 125%;
+    text-shadow: 1px 1px 1px var(--grayBackground);
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+}
+
+.book-button{
+    background-color: var(--red);
+}
+/*Header CSS---------------------------------------*/
+/*Footer CSS---------------------------------------*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+
