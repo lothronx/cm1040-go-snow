@@ -9,18 +9,23 @@
     <meta name="description" content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!">
     <meta name="keywords" content="theme park, skiing, snowboard, ice sculpture">
     <meta name="author" content="Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury">
+   
     <!--open graph tags-->
     <meta property="og:title" content="Explore GoSnow today and enjoy 20% off">
     <meta property="og:image" content="assets/images/logo.png">
     <meta property="og:description" content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!">
+   
     <!--robots tag-->
     <meta name="robots" content="index, nofollow">
+   
+    <!--css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+
     <!--include the common header and footer using jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	  
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
     <script> 
       $(function(){
         $("#header").load("assets/header_and_footer/header.html"); 
@@ -33,10 +38,9 @@
 	  <div class="container-fluid">
 	  
     <!-- Header -->
-    <!--header id="header"></header-->
+    <header id="header"></header>
 
     <!-- Section 1: main banner with video -->
-	<div class="row">
 	  <div class="card">
         <video width="99.9%" autoplay loop muted playsinline>
             <source src="assets/videos/snowboard.mp4" type="video/mp4">
@@ -46,62 +50,58 @@
         </video>
         <!-- overlay text with offer and button for buying ticket -->
         <div class="card-img-overlay">
-            <h1 class="card-title">20% Special Offer ends in 2 Days <button type="button" class="btn btn-primary">Click Here to Buy Tickets Now</button></h1>
-			
-            
+            <h1 class="card-title">20% Special Offer<br>Ends In 2 Days</h1>
+            <button type="button" class="btn btn-primary">Click Here to Buy Tickets Now</button>
         </div>
     </div>
-	</div>
 
     <!-- Section 2: three major attractions -->
   
       <!-- brief intro -->
-      <div class="row">
+      <div class="row" id="brief-intro">
         <h2>Enjoy the real ice and snow</h2>
         <p>Looking to have some one-of-a-kind fun? Look no further! At GoSnow, we are committed to providing nothing but safe and unforgettable adventures!</p>
       </div>
       
       <!-- Three colomns of major attractions-->
       <div class="row">
-		 <div class="col-sm-4">
         <!--Major attraction 1: Ice Sculptures -->
-		    <div class="card">
-			    <img class="img-thumbnail" src="assets/images/IceSculpture.JPG" alt="Ice Sculptures">
-				<div class="card-body">
-				  <h3 class="card-title">Ice Sculptures</h3>
-			    <p class="card-text">Our beautiful display of unique and delicate ice sculptures are something to be seen!</p>
-		    	</div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="assets/images/IceSculpture.JPG" alt="Ice Sculptures">
+            <div class="card-body">
+              <h3 class="card-title">Ice Sculptures</h3>
+              <p class="card-text">Our beautiful display of unique and delicate ice sculptures are something to be seen!</p>
+            </div>
+          </div>
 		    </div>
-		  
-		  </div>
 
         <!--Major attraction 2: Ice Rink -->
-		 <div class="col-sm-4">
-        <div class="card">
-          <!--Image credit: Getty Images/Cultura RF-->
-          <img src="assets/images/IceRink.JPG" alt="Ice Rink">
-		<div class="card-body">
-          <h3 class="card-title">Ice Rink</h3>
-          <p class="card-text">Our Ice Rink is suitable for all skating levels, with our famous ‘disco’ mode for an extra bit of fun!</p>
-		    </div>
-		
-
-		  </div>
-		  </div>
+		    <div class="col-sm-4">
+          <div class="card">
+            <!--Image credit: Getty Images/Cultura RF-->
+            <img src="assets/images/IceRink.JPG" alt="Ice Rink">
+            <div class="card-body">
+              <h3 class="card-title">Ice Rink</h3>
+              <p class="card-text">Our Ice Rink is suitable for all skating levels, with our famous ‘disco’ mode for an extra bit of fun!</p>
+            </div>
+          </div>
+        </div>
         <!--Major attraction 3: Snowboarding -->
-		<div class="col-sm-4">
-        <div class="card">
-          <img src="assets/images/Snowboarding.JPG" alt="Snowboarding">
-          <h3 class="card-title">Snowboarding</h3>
-          <p class="card-text">Our snowboarding ledge is suitable for the whole family, safe enough to ensure no one gets left out!</p>
-		    </div>
-		    </div>
-		  
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="assets/images/Snowboarding.JPG" alt="Snowboarding">
+            <div class="card-body">
+              <h3 class="card-title">Snowboarding</h3>
+              <p class="card-text">Our snowboarding ledge is suitable for the whole family, safe enough to ensure no one gets left out!</p>
+            </div>
+          </div>
+        </div>
       </div>
 
 
     <!-- Section 3: about the park -->
-    <article>
+    <article id="about-park">
       <!-- Left: Park picture -->
       <div>
 			  <img src="assets/images/AboutGoSnow.jpeg" alt="About GoSnow">

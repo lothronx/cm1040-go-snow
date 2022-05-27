@@ -1,0 +1,27 @@
+/*Index.html CSS-----------------------------------*/
+#brief-intro{
+    color: var(--blue);
+}
+
+#about-park{
+    background-color: var(--blue);
+}
+#about-park h2{
+    color: var(--white);
+}
+#about-park p{
+    color: var(--whiteOpaque);
+    text-indent: 32px;
+}
+
+.card-body{
+    background-color: var(--blue);
+}
+
+.card-title{
+    color: var(--white);
+}
+
+.card-text{
+    color: var(--whiteOpaque);
+}
