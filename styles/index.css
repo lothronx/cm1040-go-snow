@@ -1,34 +1,33 @@
 /*Index.html CSS-----------------------------------*/
-.hero{
-    height: 40vw;
+.hero {
+  height: 40vw;
 }
-.hero-text{
-    font-size: 4vw;
-}
-
-#major-attractions{
-    color: var(--blue);
-}
-#attractions .card-body{
-    background-color: var(--blue);
+.hero-text {
+  font-size: 4vw;
 }
 
-#attractions .card-title{
-    color: var(--white);
+#major-attractions {
+  color: var(--blue);
+}
+#attractions .card-body {
+  background-color: var(--blue);
 }
 
-#attractions .card-text{
-    color: var(--whiteOpaque);
+#attractions .card-title {
+  color: var(--white);
 }
 
-#about-park{
-    background-color: var(--blue);
-}
-#about-park h2{
-    color: var(--white);
-}
-#about-park p{
-    color: var(--whiteOpaque);
-    text-indent: 32px;
+#attractions .card-text {
+  color: var(--whiteOpaque);
 }
 
+#about-park {
+  background-color: var(--blue);
+}
+#about-park h2 {
+  color: var(--white);
+}
+#about-park p {
+  color: var(--whiteOpaque);
+  text-indent: 32px;
+}

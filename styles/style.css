@@ -1,17 +1,17 @@
 /* Custom Fonts ---------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400&family=Montserrat+Alternates:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400&family=Montserrat+Alternates:wght@400;500;600&display=swap");
 
 :root {
-/* Color Scheme --------------------------------------*/
-  --red: #C24336;
-  --blue: #4E82C0;
-  --blueOpaque: #4E82C0CC;
-  --white: #FFFFFF;
-  --whiteOpaque: #FFFFFFCC;
+  /* Color Scheme --------------------------------------*/
+  --red: #c24336;
+  --blue: #4e82c0;
+  --blueOpaque: #4e82c0cc;
+  --white: #ffffff;
+  --whiteOpaque: #ffffffcc;
   --gray: #434343;
-  --grayOpaque: #434343CC;
-  --grayBackground: #E5E5E54D;
-  }
+  --grayOpaque: #434343cc;
+  --grayBackground: #e5e5e54d;
+}
 
 /** Default Style ----------------------------------*/
 body {
@@ -19,7 +19,7 @@ body {
   width: 100%;
   margin: 0;
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 100%;
   line-height: 150%;
 
@@ -28,29 +28,29 @@ body {
 }
 
 /* Common CSS ----------------------------------------*/
-h2{
-  font-family: 'Montserrat Alternates', sans-serif;
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 2.4em;
   font-weight: 600;
   text-shadow: 2px 2px 1px var(--grayBackground);
 }
 
-h3{
-  font-family: 'Montserrat', sans-serif;
+h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4em;
   font-weight: 500;
   text-shadow: 1px 1px 1px var(--grayBackground);
 }
 
-.small{
+.small {
   font-size: small;
 }
 
-.subheadline p{
+.subheadline p {
   font-size: 1.2em;
 }
 
-.hero {  
+.hero {
   position: relative;
   text-align: center;
   width: 100vw;
@@ -58,7 +58,7 @@ h3{
 }
 
 .hero-text {
-  font-family: 'Monoton', cursive;
+  font-family: "Monoton", cursive;
   line-height: 125%;
   word-spacing: 15px;
   text-align: center;
@@ -69,7 +69,7 @@ h3{
   color: var(--whiteOpaque);
 }
 
-.btn-booking{
+.btn-booking {
   font-weight: 900;
   color: var(--white);
   background-color: var(--red);
@@ -78,7 +78,7 @@ h3{
 /*Header CSS---------------------------------------*/
 
 /*Footer CSS---------------------------------------*/
-#bottom-ad{
+#bottom-ad {
   background-color: var(--blue);
   color: var(--white);
 }

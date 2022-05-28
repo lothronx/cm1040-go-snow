@@ -1,11 +1,11 @@
-.subheadline{
-    background-color: var(--blue);
+.subheadline {
+  background-color: var(--blue);
 }
 
-.subheadline h2{
-    color: var(--white);
+.subheadline h2 {
+  color: var(--white);
 }
 
-.subheadline p{
-    color: var(--whiteOpaque);
+.subheadline p {
+  color: var(--whiteOpaque);
 }
