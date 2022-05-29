@@ -1,17 +1,11 @@
-ul {
-  list-style-type: "✓ ";
-}
-
-.card:hover {
-background-color: var(--grayBackground);
-}
-
-.section-intro {
-  color: var(--whiteOpaque);
+.subheadline {
   background-color: var(--blue);
-  box-shadow: 0 0 12px var(--blueOpaque);
 }
 
-.section-intro::first-line {
+.subheadline h2 {
   color: var(--white);
+}
+
+.subheadline p {
+  color: var(--whiteOpaque);
 }

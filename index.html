@@ -38,7 +38,6 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/index.css" />
 
@@ -46,8 +45,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
       $(function () {
-        $("#header").load("header-and-footer/header.html");
-        $("#footer").load("header-and-footer/footer.html");
+        $("#header").load("assets/header_and_footer/header.html");
+        $("#footer").load("assets/header_and_footer/footer.html");
       });
     </script>
   </head>
@@ -56,81 +55,93 @@
     <!-- Header -->
     <header id="header"></header>
 
-    <main>
-      <!-- Section 1: main hero with video -->
-      <section class="hero">
-        <video width="99.9%" autoplay loop muted playsinline>
-          <source src="assets/videos/main-hero.mp4" type="video/mp4" />
-          <!-- catch if html5 is not supported -->
-          Your browser does not support HTML5 video.
-          <a href="assets/videos/main-hero.mp4"
-            >Click here to view original Video</a
-          >
-        </video>
-        <!-- overlay text with offer and button for buying ticket -->
-        <span class="hero-text">20% Special Offer<br />Ends In 2 Days</span>
-        <a class="btn btn-booking hero-button" href="plan-your-visit.html"
-          >Click Here to Buy Tickets Now</a
+    <!-- Section 1: main hero with video -->
+    <div class="hero">
+      <video autoplay loop muted playsinline>
+        <source src="assets/videos/snowboard.mp4" type="video/mp4" />
+        <!-- catch if html5 is not supported -->
+        Your browser does not support HTML5 video.
+        <a href="assets/videos/snowboard.mp4"
+          >Click here to view original Video</a
         >
-      </section>
-      <!-- Section 2: three major attractions -->
-      <section id="major-attractions">
-        <!-- brief intro -->
-        <div class="section-intro">
-          <h1 class="big-title">Enjoy the real ice and snow</h1>
-          <p class="big-text">
-            Looking to have some one-of-a-kind fun? Look no further! At GoSnow,
-            we are committed to providing nothing but safe and unforgettable
-            adventures!
-          </p>
-        </div>
-        <!-- Three colomns of major attractions-->
-        <div class="card-container">
-          <!--Major attraction 1: Ice Sculptures -->
+      </video>
+      <!-- overlay text with offer and button for buying ticket -->
+      <div class="hero-text">
+        <span>20% Special Offer<br />Ends In 2 Days<br /></span>
+        <button type="button" class="btn btn-booking">
+          Click Here to Buy Tickets Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Section 2: three major attractions -->
+    <div id="major-attractions" class="container-fluid">
+      <!-- brief intro -->
+      <div class="subheadline">
+        <h1>Enjoy the real ice and snow</h1>
+        <p>
+          Looking to have some one-of-a-kind fun? Look no further! At GoSnow, we
+          are committed to providing nothing but safe and unforgettable
+          adventures!
+        </p>
+      </div>
+
+      <!-- Three colomns of major attractions-->
+      <div class="row">
+        <!--Major attraction 1: Ice Sculptures -->
+        <div class="col-sm-4">
           <div class="card">
             <img src="assets/images/IceSculpture.JPG" alt="Ice Sculptures" />
             <div class="card-body">
-              <h3 class="small-title">Ice Sculptures</h3>
-              <p>
+              <h3 class="card-title">Ice Sculptures</h3>
+              <p class="card-text">
                 Our beautiful display of unique and delicate ice sculptures are
                 something to be seen!
               </p>
             </div>
           </div>
-          <!--Major attraction 2: Ice Rink -->
+        </div>
+
+        <!--Major attraction 2: Ice Rink -->
+        <div class="col-sm-4">
           <div class="card">
             <!--Image credit: Getty Images/Cultura RF-->
             <img src="assets/images/IceRink.JPG" alt="Ice Rink" />
             <div class="card-body">
-              <h3 class="small-title">Ice Rink</h3>
-              <p>
+              <h3 class="card-title">Ice Rink</h3>
+              <p class="card-text">
                 Our Ice Rink is suitable for all skating levels, with our famous
                 'disco' mode for an extra bit of fun!
               </p>
             </div>
           </div>
-          <!--Major attraction 3: Snowboarding -->
+        </div>
+        <!--Major attraction 3: Snowboarding -->
+        <div class="col-sm-4">
           <div class="card">
             <img src="assets/images/Snowboarding.JPG" alt="Snowboarding" />
             <div class="card-body">
-              <h3 class="small-title">Snowboarding</h3>
-              <p>
+              <h3 class="card-title">Snowboarding</h3>
+              <p class="card-text">
                 Our snowboarding ledge is suitable for the whole family, safe
                 enough to ensure no one gets left out!
               </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Section 3: about the park -->
-      <section id="about-park" class="container">
+      </div>
+    </div>
+
+    <!-- Section 3: about the park -->
+    <div id="about-park" class="container-fluid body body-big-img body-left">
+      <div class="row">
         <!-- Left: Park picture -->
-        <figure>
+        <div class="col">
           <img src="assets/images/AboutGoSnow.jpeg" alt="About GoSnow" />
-        </figure>
+        </div>
         <!-- Right: Park introduction -->
-        <article>
-          <h2 class="big-title">About GoSnow</h2>
+        <div class="col">
+          <h2>About GoSnow</h2>
           <p>
             GoSnow is globally rated one of the best theme parks, boasting its
             unique and undeinaibly awesome features! Along with our renowned ice
@@ -144,40 +155,55 @@
             hope to see you at our theme park, so we can deliver yo with the
             experience of a lifetime!
           </p>
-        </article>
-      </section>
+        </div>
+      </div>
+    </div>
 
-      <!-- Section 4: customer reviews -->
-      <section id="customer-reviews" class="card-container">
+    <!-- Section 4: customer reviews -->
+    <!-- Three coloums of customer reviews -->
+    <div id="customer-reviews" class="container-fluid">
+      <div class="row">
         <!-- Customer review 1-->
-        <div class="card">
-          <blockquote class="big-text">
+        <div class="col card">
+          <blockquote class="card-body">
             “The perfect escape from city life! Will definitely be coming back
             again soon!”
           </blockquote>
-          <img src="assets/images/Peige.jpg" alt="Paige Goetsch avatar" />
+          <img
+            src="assets/images/Peige.jpg"
+            class="img-circle img-responsive"
+            alt="Paige Goetsch pic"
+          />
           <p>Paige Goetsch</p>
         </div>
         <!-- Customer review 2-->
-        <div class="card">
-          <blockquote class="big-text">
+        <div class="col card">
+          <blockquote class="card-body">
             "A wonderful place for the whole family. My children absolutely
             loved it. Definitely recommended!"
           </blockquote>
-          <img src="assets/images/Fazley.jpg" alt="Fazley Chowdhury avatar" />
+          <img
+            src="assets/images/Fazley.jpg"
+            class="img-circle img-responsive"
+            alt="Fazley Chowdhury pic"
+          />
           <p>Fazley Chowdhury</p>
         </div>
         <!-- Customer review 3-->
-        <div class="card">
-          <blockquote class="big-text">
+        <div class="col card">
+          <blockquote class="card-body">
             "One of the best experiences of my life! The disco ice rink is a
             super feature."
           </blockquote>
-          <img src="assets/images/Yue.JPG" alt="Yue Wu avatar" />
+          <img
+            src="assets/images/Yue.JPG"
+            class="img-circle img-responsive"
+            alt="Yue Wu pic"
+          />
           <p>Yue Wu</p>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer id="footer"></footer>

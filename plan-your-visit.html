@@ -18,135 +18,128 @@
 		
 		<!--css-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-		    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="styles/plan-your-visit.css" />
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/plan-your-visit.css">
 
-    <!--include the common header and footer using jQuery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>
-      $(function () {
-        $("#header").load("header-and-footer/header.html");
-        $("#footer").load("header-and-footer/footer.html");
-      });
-    </script>
+		<!--include the common header and footer using jQuery-->
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script> 
+			$(function(){
+				$("#header").load("assets/header_and_footer/header.html"); 
+				$("#footer").load("assets/header_and_footer/footer.html"); 
+			});
+		</script> 
 	</head>
 
     <body>
    		<!-- header -->
     	<header id="header"></header>
 		
-		<main>
-			<!--Section 1: Tickets information-->
-			<section id="tickets">
-				<!-- brief intro -->
-				<div class="section-intro">
-					<h2 class="big-title">Theme Park Entry Tickets</h2>
-					<p class="big-text">Save up to 20% when you book theme park tickets in advance. Explore our range of entry tickets below.</p>
-				</div>
+		<!--Section 1: Tickets information-->
+        <div id="tickets">
+			<!-- brief intro -->
+			<div class="subheadline">
+				<h2>Theme Park Entry Tickets</h2>
+				<p>Save up to 20% when you book theme park tickets in advance. Explore our range of entry tickets below.</p>
+			</div>
 			
-				<!-- Three colomns of tickets options -->
-				<div class="card-container">
-					<!-- Tickets option 1: Standard tickets -->
-					<div class="card">
-						<img src="assets/images/standard-ticket.png" alt="Standard Tickets">
-						<div class="card-body">
-							<h3 class="small-title">Standard Tickets</h3>
-							<ul>
-								<li>Access for the whole day</li>
-								<li>Access to all activities</li>
-								<li>Free bathroom access</li>
-								<li>Seating area access</li>
-								<li>Free kiddies badge</li>
-							</ul>
-						</div>
-						<button class="btn btn-booking"><a href="plan-your-visit.html#booking">Book Now</a></button>
-					</div>
-			
-					<!-- Tickets option 2: Group tickets -->
-					<div class="card">
-						<img src="assets/images/group_tickets.png" alt="Group Tickets">
-						<div class="card-body">
-							<h3 class="small-title">Group Tickets</h3>
-							<ul>
-								<li>Group table reseervation</li>
-								<li>Skip the queue</li>
-								<li>Complimentary ice bar drinks</li>
-								<li>Guaranteed joint skating slot</li>
-							</ul>
-						</div>
-						<button class="btn btn-booking"><a href="plan-your-visit.html#booking">Book Now</a></button>
-					</div>
-			
-					<!-- Tickets option 3: Season pass -->
-					<div class="card"> 
-						<img src="assets/images/season-pass.png" alt="Season Pass">
-						<div class="card-body">
-							<h3 class="small-title">Season Pass</h3>
-							<ul>
-								<li>Skip the entrance queue all season</li>
-								<li>Pay once off at discounted rates</li>
-								<li>Free merchandise</li>
-								<li>Exclusive bathrooms</li>
-								<li>Exclusive seating area</li>
-							</ul>
-						</div>
-						<button class="btn btn-booking"><a href="plan-your-visit.html#booking">Book Now</a></button>
-					</div>
-				</div>
-			</section>
-
-			<!-- Section 2: Travel Information -->
-			<section id="travel">
-				<!-- brief intro -->
-				<div class="section-intro">
-					<h2 class="big-title">Getting to the park</h2>
-					<p class="big-text">We would love to say you could find the park by following your heart, but an address might be more clear cut!</p>
-				</div>
-			
-				<div class="container">
-					<!-- Left: Three travel information-->
-					<div>
-						<!--Location-->
-						<div>
-							<h3 class="small-title">Location</h3>
-							<p>Located at the heart of London, UK, in the great mountain range of Hartz. See map for more detailed location.</p>
-						</div>
-						<!--Opening Hours-->
-						<div>
-							<h3 class="small-title">Opening hours</h3>
-							<p>Open weekly from <time>9:00 AM</time> to <time>6:00 PM</time>. *exluding overnight guests</p>
-						</div>
-						<!--Weather Today-->
-						<div>
-							<h3 class="small-title">Weather today</h3>
-							<a href="https://www.accuweather.com/en/de/frankfurt/60311/weather-forecast/168720" target="_blank">Check the weather app in the area for weather reports!</a>
-						</div>
-					</div>
-					<!-- Right: Map embedment-->
-					<div>
-						<iframe scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Hanauer%20Landstrasse%20180%20Frankfurt%20am%20Main+(GoSnow)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="520" height="400" frameborder="0"></iframe> <a href='https://add-map.org/'>adding google maps to my website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=b0d764dd99aa47b1a46f1f178be3aa8f7c18557e'></script>
-					</div>
-				</div>
+			<!-- Three colomns of tickets options -->
 			<div>
+				<!-- Tickets option 1: Standard tickets -->
+				<div>
+					<img src="assets/images/standard-ticket.png" alt="Standard Tickets">
+					<h3>Standard Tickets</h3>
+					<ul>
+						<li>Access for the whole day</li>
+						<li>Access to all activities</li>
+						<li>Free bathroom access</li>
+						<li>Seating area access</li>
+						<li>Free kiddies badge</li>
+					</ul>
+					<button class="btn btn-booking"><a href="plan-your-visit.html#booking">Book Now</a></button>
+				</div>
+				
+				<!-- Tickets option 2: Group tickets -->
+				<div>
+					<img src="assets/images/group_tickets.png" alt="Group Tickets">
+					<h3>Group Tickets</h3>
+					<ul>
+						<li>Purchase 3+ tickets together and get the 4th one free.</li>
+						<li>Group table reseervation</li>
+						<li>Skip the queue</li>
+						<li>Complimentary ice bar drinks</li>
+						<li>Guaranteed joint skating slot</li>
+					</ul>
+					<button class="btn btn-booking"><a href="plan-your-visit.html#booking">Book Now</a></button>
+				</div>
+				
+				<!-- Tickets option 3: Season pass -->
+				<div>
+					<img src="assets/images/season-pass.png" alt="Season Pass">
+					<h3>Season Pass</h3>
+					<ul>
+						<li>Skip the entrance queue all season</li>
+						<li>Pay once off at discounted rates</li>
+						<li>Free merchandise</li>
+						<li>Exclusive bathrooms</li>
+						<li>Exclusive seating area</li>
+					</ul>
+					<button class="btn btn-booking"><a href="plan-your-visit.html#booking">Book Now</a></button>
+				</div>
+			</div>
+        </div>
+        
+		<!-- Section 2: Travel Information -->
+		<div id="travel">
+			<!-- brief intro -->
+			<div class="subheadline"> 
+				<h2>Getting to the park</h2>
+				<p>We would love to say you could find the park by following your heart, but an address might be more clear cut!</p>
+			</div>
+			
+			<div class="body body-big-img body-right">
+				<!-- Left: Three travel information-->
+				<div>
+					<!--Location-->
+					<div>
+						<h3>Location</h3>
+						<p>Located at the heart of London, UK, in the great mountain range of Hartz. See map for more detailed location.</p>
+					</div>
+					<!--Opening Hours-->
+					<div>
+						<h3>Opening hours</h3>
+						<p>Open weekly from <time>9:00 AM</time> to <time>6:00 PM</time>. *exluding overnight guests</p>
+					</div>
+					<!--Weather Today-->
+					<div>
+						<h3>Weather today</h3>
+						<a href="https://www.accuweather.com/en/de/frankfurt/60311/weather-forecast/168720" target="_blank">Check the weather app in the area for weather reports!</a>
+					</div>
+				</div>
+				<!-- Right: Map embedment-->
+				<div>
+					<iframe scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Hanauer%20Landstrasse%20180%20Frankfurt%20am%20Main+(GoSnow)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="520" height="400" frameborder="0"></iframe> <a href='https://add-map.org/'>adding google maps to my website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=b0d764dd99aa47b1a46f1f178be3aa8f7c18557e'></script>
+				</div>
+			</div>
+		<div>
 
-			<!-- Section 3: about the park -->
-			<section id="about-park">
-				<!-- brief intro -->
-				<div class="section-intro">
-					<h2 class="big-title">About the park</h2>
-					<p class="big-text">Your happiness is our success. we would be honoured to have you.</p>
+		<!-- Section 3: about the park -->
+		<article id="about-park">
+			<!-- brief intro -->
+			<div class="subheadline">
+				<h2>About the park</h2>
+				<p>Your happiness is our success. we would be honoured to have you.</p>
+			</div>
+
+			<div class="body body-big-img body-left">
+				<img src="assets/images/AboutGoSnow.jpeg" alt="About GoSnow">
+				<div>
+					<p><b>GoSnow</b> is a worldclass theme park. We have poured our heart into ensuring that our guests only receive the best care and experience! From ice skating in the flashing lights, to simply walking through the gallery of sculptures we hope to think we have done everything right. This theme park for us is not just our business, but it is our life that we have built from our family’s love and passion of winter activities. We have let our imaginations run free in our ideas, so that you can enjoy our home made ‘breath of fresh air’.</p>
+					<p><b>We</b> hope to make your stay as inclusive as possible while not restricting you from doing anything. In our eyes, your happiness is our success and that is all that matters to us.</p>
+					<p><b>GoSnow</b> would be honoured to host you and your friends and family! Our website produces information about our theme park, but please do not hesitate to reach out with any more questions you may have or recommendations. </p>
 				</div>
-				<div class="container">
-					<figure><img src="assets/images/AboutGoSnow.jpeg" alt="About GoSnow"></figure>
-					<article>
-						<p>GoSnow is a worldclass theme park. We have poured our heart into ensuring that our guests only receive the best care and experience! From ice skating in the flashing lights, to simply walking through the gallery of sculptures we hope to think we have done everything right. This theme park for us is not just our business, but it is our life that we have built from our family’s love and passion of winter activities. We have let our imaginations run free in our ideas, so that you can enjoy our home made ‘breath of fresh air’.</p>
-						<p>We hope to make your stay as inclusive as possible while not restricting you from doing anything. In our eyes, your happiness is our success and that is all that matters to us.</p>
-						<p>GoSnow would be honoured to host you and your friends and family! Our website produces information about our theme park, but please do not hesitate to reach out with any more questions you may have or recommendations. </p>
-					</article>
-				</div>
-			</section>
-		</main>
+			</div>
+		</article>
 
     	<!-- Footer -->
     	<footer id="footer"></footer>

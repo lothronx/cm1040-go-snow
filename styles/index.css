@@ -1,49 +1,33 @@
 /*Index.html CSS-----------------------------------*/
+.hero {
+  height: 40vw;
+}
 .hero-text {
-  word-spacing: 15px;
-  line-height: 125%;
-  font-size: 8vw;
-  width: max-content;
-  top: 38%;
+  font-size: 4vw;
 }
 
-.hero-button {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: max-content;
-}
-
-.section-intro {
-  color: var(--blueOpaque);
-}
-
-.section-intro:first-line {
+#major-attractions {
   color: var(--blue);
 }
-
-#major-attractions .card {
+#attractions .card-body {
   background-color: var(--blue);
-  color: var(--whiteOpaque);
-  box-shadow: 0 0 8px var(--blueOpaque);
 }
 
-#major-attractions .card-body::first-line {
+#attractions .card-title {
   color: var(--white);
+}
+
+#attractions .card-text {
+  color: var(--whiteOpaque);
 }
 
 #about-park {
-  color: var(--whiteOpaque);
   background-color: var(--blue);
-  box-shadow: 0 0 12px var(--blueOpaque);
 }
-
-#about-park::first-line {
+#about-park h2 {
   color: var(--white);
 }
-
-#customer-reviews img{
-  border-radius: 100%;
-  width: 40%;
+#about-park p {
+  color: var(--whiteOpaque);
+  text-indent: 32px;
 }
