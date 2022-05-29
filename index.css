@@ -1,0 +1,49 @@
+/*Index.html CSS-----------------------------------*/
+.hero-text {
+  word-spacing: 15px;
+  line-height: 125%;
+  font-size: 8vw;
+  width: max-content;
+  top: 38%;
+}
+
+.hero-button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+.section-intro {
+  color: var(--blueOpaque);
+}
+
+.section-intro:first-line {
+  color: var(--blue);
+}
+
+#major-attractions .card {
+  background-color: var(--blue);
+  color: var(--whiteOpaque);
+  box-shadow: 0 0 8px var(--blueOpaque);
+}
+
+#major-attractions .card-body::first-line {
+  color: var(--white);
+}
+
+#about-park {
+  color: var(--whiteOpaque);
+  background-color: var(--blue);
+  box-shadow: 0 0 12px var(--blueOpaque);
+}
+
+#about-park::first-line {
+  color: var(--white);
+}
+
+#customer-reviews img{
+  border-radius: 100%;
+  width: 40%;
+}

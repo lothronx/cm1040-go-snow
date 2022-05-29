@@ -1,11 +1,17 @@
-.subheadline {
-  background-color: var(--blue);
+ul {
+  list-style-type: "✓ ";
 }
 
-.subheadline h2 {
-  color: var(--white);
+.card:hover {
+background-color: var(--grayBackground);
 }
 
-.subheadline p {
+.section-intro {
   color: var(--whiteOpaque);
+  background-color: var(--blue);
+  box-shadow: 0 0 12px var(--blueOpaque);
+}
+
+.section-intro::first-line {
+  color: var(--white);
 }
