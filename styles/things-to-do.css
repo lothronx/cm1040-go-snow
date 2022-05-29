@@ -1,7 +1,29 @@
-.hero {
-  height: 25vw;
+#secondary-nav {
+  background: var(--blue);
+  color: var(--white);
 }
-.hero-text {
-  font-weight: normal;
-  font-size: 12vw;
+
+.hero {
+  height: 30vw;
+}
+
+#events .hero-text {
+  font-size: 19vw;
+}
+
+#attractions .hero-text {
+  font-size: 11vw;
+}
+
+#services .hero-text {
+  font-size: 15vw;
+}
+
+.container:nth-child(odd){
+  background: var(--grayBackground);
+  background: linear-gradient(to right, var(--white), var(--grayBackground));
+}
+
+.container:nth-child(even){
+  background: linear-gradient(to left, var(--white), var(--grayBackground));
 }
