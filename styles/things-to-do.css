@@ -19,11 +19,23 @@
   font-size: 15vw;
 }
 
-.body-container:nth-child(odd){
+.body-container {
+  margin: 0;
+}
+
+article {
+  margin: 10vw;
+}
+
+figure {
+  width: 20vw;
+}
+
+.body-container:nth-child(odd) {
   background: var(--grayBackground);
   background: linear-gradient(to right, var(--white), var(--grayBackground));
 }
 
-.body-container:nth-child(even){
+.body-container:nth-child(even) {
   background: linear-gradient(to left, var(--white), var(--grayBackground));
 }
