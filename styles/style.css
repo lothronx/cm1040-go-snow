@@ -103,7 +103,7 @@ article p::first-letter {
   font-size: x-large;
 }
 
-article {
+article, .article {
   margin: 10%;
 }
 
