@@ -32,10 +32,10 @@ figure {
 }
 
 .body-container:nth-child(odd) {
-  background: var(--grayBackground);
-  background: linear-gradient(to right, var(--white), var(--grayBackground));
+  background: var(--background);
+  background: linear-gradient(to right, var(--white), var(--background));
 }
 
 .body-container:nth-child(even) {
-  background: linear-gradient(to left, var(--white), var(--grayBackground));
+  background: linear-gradient(to left, var(--white), var(--background));
 }

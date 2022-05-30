@@ -3,7 +3,7 @@ ul {
 }
 
 .card:hover {
-background-color: var(--grayBackground);
+  background-color: var(--background);
 }
 
 .intro {

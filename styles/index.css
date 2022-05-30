@@ -7,12 +7,11 @@
   top: 38%;
 }
 
-.hero-button {
+.btn-hero {
   position: absolute;
   top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: max-content;
+  animation-iteration-count: infinite;
 }
 
 .intro {
@@ -43,7 +42,7 @@
   color: var(--white);
 }
 
-#customer-reviews img{
+#customer-reviews img {
   border-radius: 100%;
   width: 40%;
 }

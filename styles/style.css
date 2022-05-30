@@ -3,59 +3,56 @@
 
 :root {
   /* Color Scheme --------------------------------------*/
-  --red: #c24336;
+  --highlight: #c24336;
   --blue: #4e82c0;
   --blueOpaque: #4e82c0cc;
   --white: #ffffff;
   --whiteOpaque: #ffffffcc;
   --gray: #434343;
   --grayOpaque: #434343cc;
-  --grayBackground: #e5e5e54d;
+  --background: #e5e5e54d;
 }
 
-/* Font Scheme ----------------------------------------*/
-
-.big-title {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: xx-large;
-  font-weight: 500;
-  text-shadow: 2px 2px 3px var(--grayBackground);
-  padding: 0 0 1vw;
-}
-
-.small-title {
-  font-size: x-large;
-  font-weight: 500;
-  text-shadow: 1px 1px 2px var(--grayBackground);
-  padding: 1vw 0 0.5vw;
-}
-
-.big-text {
-  font-size: larger;
-  text-shadow: 1px 1px 2px var(--grayBackground);
-}
-
-.small-text {
-  font-size: small;
-}
-
-/* Default Style ---------------------------------------*/
+/* Typography ----------------------------------------*/
 body {
-  height: 100%;
-  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
   line-height: 150%;
   color: var(--gray);
 }
 
+.big-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: xx-large;
+  font-weight: 500;
+  text-shadow: 2px 2px 3px var(--background);
+  padding: 0 0 1vw;
+}
+
+.small-title {
+  font-size: x-large;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px var(--background);
+  padding: 1vw 0 0.5vw;
+}
+
+.big-text {
+  font-size: larger;
+  text-shadow: 1px 1px 2px var(--background);
+}
+
+.small-text {
+  font-size: small;
+}
+
 /* Hero Style -----------------------------------*/
 .hero {
   position: relative;
-  text-align: center;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   z-index: 1;
+  text-align: center;
 }
 
 .hero-text {
@@ -116,10 +113,14 @@ article,
 }
 
 /* Button Style ----------------------------------*/
+.btn:hover {
+  transform: perspective(100px) translateZ(5px);
+}
+
 .btn-booking {
   font-weight: 900;
   color: var(--white);
-  background-color: var(--red);
+  background-color: var(--highlight);
 }
 
 /*Header CSS---------------------------------------*/
