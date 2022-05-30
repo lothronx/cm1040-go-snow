@@ -14,14 +14,6 @@
 }
 
 /* Font Scheme ----------------------------------------*/
-.hero-text {
-  font-family: "Monoton", cursive;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--whiteOpaque);
-}
 
 .big-title {
   font-family: "Montserrat Alternates", sans-serif;
@@ -32,7 +24,6 @@
 }
 
 .small-title {
-  font-family: "Montserrat", sans-serif;
   font-size: x-large;
   font-weight: 500;
   text-shadow: 1px 1px 2px var(--grayBackground);
@@ -47,22 +38,17 @@
   font-size: small;
 }
 
-article p::first-letter {
-  font-size: x-large;
-}
-
-/*Common CSS---------------------------------------*/
-
+/* Default Style ---------------------------------------*/
 body {
   height: 100%;
   width: 100%;
-
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
   line-height: 150%;
   color: var(--gray);
 }
 
+/* Hero Style -----------------------------------*/
 .hero {
   position: relative;
   text-align: center;
@@ -70,10 +56,21 @@ body {
   overflow: hidden;
 }
 
-.section-intro {
+.hero-text {
+  font-family: "Monoton", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--whiteOpaque);
+}
+
+/* Intro Style ----------------------------------*/
+.intro {
   padding: 2% 10vw 1% 10vw;
 }
 
+/* Card Style -----------------------------------*/
 .card-container {
   margin: 0% 8vw 2% 8vw;
   display: flex;
@@ -92,7 +89,8 @@ body {
   padding: 10%;
 }
 
-.container {
+/* Body Style ----------------------------------*/
+.body-container {
   display: grid;
   width: 100vw;
   grid-template-columns: repeat(2, 50%);
@@ -100,10 +98,16 @@ body {
   gap: 0;
 }
 
+/* Article Style ----------------------------------*/
+article p::first-letter {
+  font-size: x-large;
+}
+
 article {
   margin: 10%;
 }
 
+/* Button Style ----------------------------------*/
 .btn-booking {
   font-weight: 900;
   color: var(--white);

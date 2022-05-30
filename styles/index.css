@@ -15,11 +15,11 @@
   width: max-content;
 }
 
-.section-intro {
+.intro {
   color: var(--blueOpaque);
 }
 
-.section-intro:first-line {
+.intro:first-line {
   color: var(--blue);
 }
 

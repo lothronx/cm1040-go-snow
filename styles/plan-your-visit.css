@@ -6,12 +6,12 @@ ul {
 background-color: var(--grayBackground);
 }
 
-.section-intro {
+.intro {
   color: var(--whiteOpaque);
   background-color: var(--blue);
   box-shadow: 0 0 12px var(--blueOpaque);
 }
 
-.section-intro::first-line {
+.intro::first-line {
   color: var(--white);
 }

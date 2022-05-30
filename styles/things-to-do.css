@@ -19,11 +19,11 @@
   font-size: 15vw;
 }
 
-.container:nth-child(odd){
+.body-container:nth-child(odd){
   background: var(--grayBackground);
   background: linear-gradient(to right, var(--white), var(--grayBackground));
 }
 
-.container:nth-child(even){
+.body-container:nth-child(even){
   background: linear-gradient(to left, var(--white), var(--grayBackground));
 }
