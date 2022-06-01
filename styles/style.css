@@ -45,6 +45,11 @@ body {
   font-size: small;
 }
 
+/* Media Style ----------------------------------*/
+img, video, iframe{
+  border-radius: 5px;
+}
+
 /* Hero Style -----------------------------------*/
 .hero {
   position: relative;
