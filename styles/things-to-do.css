@@ -33,3 +33,7 @@
 .body-container:nth-child(even) {
   background: linear-gradient(to left, var(--white), var(--background));
 }
+
+.body-container figure{
+  filter: drop-shadow(2px 2px 4px);
+}
