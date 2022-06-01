@@ -1,12 +1,14 @@
 /* Hero -----------------------------------*/
 .hero-text {
   font-size: 8vw;
-  top: 38%;
+  top: 40%;
+  word-spacing: 15px;
+  line-height: 1.25;
 }
 
 /* Major Attractions -----------------------------------*/
 #major-attractions .intro {
-  color: var(--blueOpaque);
+  color: var(--blue-opaque);
   padding-top: 1rem;
 }
 
@@ -16,8 +18,8 @@
 
 #major-attractions .card {
   background-color: var(--blue);
-  color: var(--whiteOpaque);
-  box-shadow: 0 0 8px var(--blueOpaque);
+  color: var(--white-opaque);
+  box-shadow: var(--shadow-soft);
 }
 
 #major-attractions .card-body::first-line {
@@ -26,9 +28,9 @@
 
 /* About Park -----------------------------------*/
 #about-park {
-  color: var(--whiteOpaque);
+  color: var(--white-opaque);
   background-color: var(--blue);
-  box-shadow: 0 0 12px var(--blueOpaque);
+  box-shadow: var(--shadow-soft);
 }
 
 #about-park::first-line {
@@ -42,5 +44,5 @@
 
 #customer-reviews img {
   border-radius: 100%;
-  width: 20%;
+  width: 15%;
 }

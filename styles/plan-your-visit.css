@@ -1,9 +1,9 @@
 /* Intro -----------------------*/
 .intro {
   padding: 1rem 5%;
-  color: var(--whiteOpaque);
+  color: var(--white-opaque);
   background-color: var(--blue);
-  box-shadow: 0 0 12px var(--blueOpaque);
+  box-shadow: var(--shadow-soft);
 }
 
 .intro::first-line {
@@ -13,6 +13,7 @@
 /* Ticket -----------------------*/
 ul {
   list-style-type: "✓ ";
+  padding: 0 0 0 1rem;
 }
 
 .card:hover {
