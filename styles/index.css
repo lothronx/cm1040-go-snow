@@ -32,6 +32,10 @@
   color: var(--white);
 }
 
+#customer-reviews .card {
+  text-align: center;
+}
+
 #customer-reviews img {
   border-radius: 100%;
   width: 40%;
