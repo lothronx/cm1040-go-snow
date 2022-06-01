@@ -46,8 +46,12 @@
   margin: 0;
 }
 
-figure {
+.body-container figure {
   margin: 10% 5%;
+}
+
+.body-container article{
+  padding: 20% 0;
 }
 
 .body-container:nth-child(odd) {

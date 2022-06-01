@@ -159,10 +159,6 @@ a:active {
   object-fit: cover;
 }
 
-.body-container article{
-  padding: 20% 0;
-}
-
 /* Button CSS ----------------------------------*/
 .btn:hover {
   transform: perspective(100px) translateZ(5px);
