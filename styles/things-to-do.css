@@ -3,6 +3,7 @@
   color: var(--white);
 }
 
+/* Hero Style -----------------------------*/
 .hero {
   height: 30vw;
 }
@@ -19,16 +20,9 @@
   font-size: 15vw;
 }
 
+/* Body Style ---------------------------*/
 .body-container {
   margin: 0;
-}
-
-article {
-  margin: 10vw;
-}
-
-figure {
-  width: 20vw;
 }
 
 .body-container:nth-child(odd) {

@@ -1,17 +1,7 @@
 /*Index.html CSS-----------------------------------*/
 .hero-text {
-  word-spacing: 15px;
-  line-height: 125%;
   font-size: 8vw;
-  width: max-content;
   top: 38%;
-}
-
-.btn-hero {
-  position: absolute;
-  top: 75%;
-  width: max-content;
-  animation-iteration-count: infinite;
 }
 
 .intro {

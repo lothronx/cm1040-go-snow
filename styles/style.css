@@ -46,15 +46,16 @@ body {
 }
 
 /* Media Style ----------------------------------*/
-img, video, iframe{
+img,
+video,
+iframe,
+section {
   border-radius: 5px;
 }
 
 /* Hero Style -----------------------------------*/
 .hero {
   position: relative;
-  display: flex;
-  justify-content: center;
   overflow: hidden;
   z-index: 100;
   text-align: center;
@@ -66,7 +67,18 @@ img, video, iframe{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: max-content;
+  word-spacing: 15px;
+  line-height: 125%;
   color: var(--whiteOpaque);
+}
+
+.btn-hero {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: max-content;
+  animation-iteration-count: infinite;
 }
 
 /* Intro Style ----------------------------------*/
