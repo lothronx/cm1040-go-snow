@@ -1,8 +1,8 @@
 /* Custom Fonts ---------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400;500&family=Montserrat+Alternates:wght@500&display=swap");
 
+/* Color Scheme --------------------------------------*/
 :root {
-  /* Color Scheme --------------------------------------*/
   --highlight: #c24336;
   --blue: #4e82c0;
   --blueOpaque: #4e82c0cc;
@@ -20,6 +20,13 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: var(--gray);
+}
+
+.hero-text {
+  font-family: Monoton, "Courier New", Courier, monospace;
+  word-spacing: 15px;
+  line-height: 1.25;
+  color: var(--whiteOpaque);
 }
 
 .big-title {
@@ -48,7 +55,15 @@ body {
   font-size: 0.8rem;
 }
 
-/* Media Style ----------------------------------*/
+article > p::first-letter {
+  font-size: 1.44rem;
+}
+
+/* Common Layout ----------------------------------*/
+:root{
+  --side-margin: 10vw;
+}
+
 img,
 video,
 iframe,
@@ -57,7 +72,11 @@ section,
   border-radius: 5px;
 }
 
-/* Hero Style -----------------------------------*/
+article {
+  margin: 10%;
+}
+
+/* Hero Layout -----------------------------------*/
 .hero {
   position: relative;
   overflow: hidden;
@@ -66,15 +85,11 @@ section,
 }
 
 .hero-text {
-  font-family: Monoton, "Courier New", Courier, monospace;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: max-content;
-  word-spacing: 15px;
-  line-height: 125%;
-  color: var(--whiteOpaque);
 }
 
 .btn-hero {
@@ -85,13 +100,13 @@ section,
   animation-iteration-count: infinite;
 }
 
-/* Intro Style ----------------------------------*/
+/* Intro Layout ----------------------------------*/
 .intro {
-  margin: 0 10vw;
+  margin: 0 var(--side-margin);
   z-index: 100;
 }
 
-/* Card Style -----------------------------------*/
+/* Card Layout -----------------------------------*/
 .card-container {
   margin: 3vw 8vw;
   display: flex;
@@ -114,26 +129,16 @@ a:link {
   text-decoration: none;
 }
 
-/* Body Style ----------------------------------*/
+/* Body Layout ----------------------------------*/
 .body-container {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   overflow: hidden;
   gap: 0;
-  margin: 0 10%;
+  margin: 0 var(--side-margin);
 }
 
-/* Article Style ----------------------------------*/
-article p::first-letter {
-  font-size: x-large;
-}
-
-article,
-.article {
-  margin: 5%;
-}
-
-/* Button Style ----------------------------------*/
+/* Button CSS ----------------------------------*/
 .btn:hover {
   transform: perspective(100px) translateZ(5px);
 }

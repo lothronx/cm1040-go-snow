@@ -1,9 +1,10 @@
+/* Secondary Navbar -----------------------------*/
 #secondary-nav {
   background: var(--blue);
   color: var(--white);
 }
 
-/* Hero Style -----------------------------*/
+/* Hero -----------------------------*/
 .hero {
   height: 30vw;
 }
@@ -20,7 +21,7 @@
   font-size: 15vw;
 }
 
-/* Body Style ---------------------------*/
+/* Body ---------------------------*/
 .body-container {
   margin: 0;
 }

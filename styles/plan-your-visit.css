@@ -1,11 +1,4 @@
-ul {
-  list-style-type: "✓ ";
-}
-
-.card:hover {
-  background-color: var(--background);
-}
-
+/* Intro -----------------------*/
 .intro {
   padding: 2% 5% 1%;
   color: var(--whiteOpaque);
@@ -17,3 +10,11 @@ ul {
   color: var(--white);
 }
 
+/* Ticket -----------------------*/
+ul {
+  list-style-type: "✓ ";
+}
+
+.card:hover {
+  background-color: var(--background);
+}

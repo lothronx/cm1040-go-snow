@@ -1,14 +1,15 @@
-/*Index.html CSS-----------------------------------*/
+/* Hero -----------------------------------*/
 .hero-text {
   font-size: 8vw;
   top: 38%;
 }
 
-.intro {
+/* Major Attractions -----------------------------------*/
+#major-attractions .intro {
   color: var(--blueOpaque);
 }
 
-.intro:first-line {
+#major-attractions .intro:first-line {
   color: var(--blue);
 }
 
@@ -22,6 +23,7 @@
   color: var(--white);
 }
 
+/* About Park -----------------------------------*/
 #about-park {
   color: var(--whiteOpaque);
   background-color: var(--blue);
@@ -32,6 +34,7 @@
   color: var(--white);
 }
 
+/* Customer reviews -----------------------------------*/
 #customer-reviews .card {
   text-align: center;
 }
