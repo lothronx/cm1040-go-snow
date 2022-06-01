@@ -1,6 +1,6 @@
 /* Intro -----------------------*/
 .intro {
-  padding: 2% 5% 1%;
+  padding: 1rem 5%;
   color: var(--whiteOpaque);
   background-color: var(--blue);
   box-shadow: 0 0 12px var(--blueOpaque);

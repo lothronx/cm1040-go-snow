@@ -29,7 +29,7 @@ body {
   color: var(--whiteOpaque);
 }
 
-.big-title {
+h1, h2 {
   font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
@@ -39,7 +39,7 @@ body {
   padding: 0 0 1rem;
 }
 
-.small-title {
+h3 {
   font-size: 1.44rem;
   font-weight: 500;
   text-shadow: 1px 1px 2px var(--background);
@@ -60,15 +60,11 @@ article > p::first-letter {
 }
 
 /* Common Layout ----------------------------------*/
-:root{
+:root {
   --side-margin: 10vw;
 }
 
-img,
-video,
-iframe,
-section,
-.intro {
+* {
   border-radius: 5px;
 }
 
@@ -76,6 +72,15 @@ article {
   margin: 10%;
 }
 
+a:link {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}
 /* Hero Layout -----------------------------------*/
 .hero {
   position: relative;
@@ -89,14 +94,16 @@ article {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: max-content;
+  width: fit-content;
 }
 
-.btn-hero {
+.hero .btn-booking {
   position: absolute;
-  top: 75%;
-  left: 50%;
-  width: max-content;
+  top: 60%;
+  left: 40%;
+  right: 40%;
+  width: auto;
+  padding: 1% 0;
   animation-iteration-count: infinite;
 }
 
@@ -108,8 +115,10 @@ article {
 
 /* Card Layout -----------------------------------*/
 .card-container {
-  margin: 3vw 8vw;
+  margin: 3vw 8vw 4vw;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -122,11 +131,7 @@ article {
 }
 
 .card-body {
-  padding: 10%;
-}
-
-a:link {
-  text-decoration: none;
+  padding: 5% 10%;
 }
 
 /* Body Layout ----------------------------------*/
@@ -153,7 +158,7 @@ a:link {
 header {
   z-index: 999;
   width: 100vw;
-  position: fixed;
+
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 

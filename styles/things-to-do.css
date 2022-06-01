@@ -4,6 +4,10 @@
   color: var(--white);
 }
 
+#secondary-nav ul{
+  display: flex;
+}
+
 /* Hero -----------------------------*/
 .hero {
   height: 30vw;
