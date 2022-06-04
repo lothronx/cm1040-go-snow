@@ -1,6 +1,24 @@
 /* Custom Fonts ---------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400;500&family=Montserrat+Alternates:wght@500&display=swap");
 
+/* Common Layout ----------------------------------*/
+:root {
+  --side-margin: 10vw;
+}
+
+* {
+  border-radius: 5px;
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+article {
+  margin: 10%;
+}
+
 /* Color Scheme --------------------------------------*/
 :root {
   --highlight: #c24336;
@@ -63,39 +81,24 @@ article > p::first-letter {
   font-size: 1.44rem;
 }
 
-/* Common Layout ----------------------------------*/
-:root {
-  --side-margin: 10vw;
-}
-
-* {
-  border-radius: 5px;
-  margin: 0;
-}
-
-article {
-  margin: 10%;
-}
-
-a:link {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
-
-/*Header CSS---------------------------------------*/
-header {
+/*Header and Footer CSS---------------------------------------*/
+header,
+#footer-main {
   z-index: 999;
   width: 100vw;
-  box-shadow: var(--shadow-soft);
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 0;
+}
+
+header,
+#bottom-ad {
+  box-shadow: var(--shadow-soft);
+}
+
+footer{
+margin: 4vw 0;
 }
 
 .navbar-nav {
@@ -118,17 +121,28 @@ header {
   transform: perspective(100px) translateZ(5px);
 }
 
-/*Footer CSS---------------------------------------*/
+.nav-link:hover {
+  color: var(--gray);
+}
+
+#copyright-information {
+  margin: 4vw;
+  text-align: center;
+}
+
 #bottom-ad {
   z-index: 999;
   width: 100vw;
   position: fixed;
-  bottom: 0;
+  bottom: 0%;
   padding: 0.5vw;
   text-align: center;
   color: var(--white);
   background-color: var(--blue);
-  box-shadow: var(--shadow-soft);
+}
+
+#bottom-ad span{
+  padding: 0 2vw;
 }
 
 /* Hero Layout -----------------------------------*/
