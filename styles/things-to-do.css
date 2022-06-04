@@ -1,9 +1,9 @@
 /* Secondary Navbar -----------------------------*/
 #secondary-navbar {
+  border-radius: 0;
   background: var(--blue);
   color: var(--white);
   box-shadow: var(--shadow-soft);
-  border-radius: 0;
 }
 
 #secondary-navbar .nav-link {
@@ -44,21 +44,25 @@
   margin: 0;
 }
 
-.body-container article {
-  padding: 5% 0;
+.body-container figure {
+  height: 20vw;
+  justify-self: center;
+  padding: 5%;
+  filter: drop-shadow(var(--shadow-hard));
+  grid-area: figure;
 }
 
-.body-container figure {
-  padding: 8% 5%;
-  height: 20vw;
-  filter: drop-shadow(var(--shadow-hard));
+.body-container article {
+  grid-area: article;
 }
 
 .body-container:nth-child(odd) {
   background: var(--background);
   background: linear-gradient(to right, var(--white), var(--background));
+  grid-template-areas: "figure article";
 }
 
 .body-container:nth-child(even) {
   background: linear-gradient(to left, var(--white), var(--background));
+  grid-template-areas: "article figure";
 }

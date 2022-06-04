@@ -40,12 +40,12 @@
 /* Customer reviews -----------------------------------*/
 #customer-reviews .card {
   text-align: center;
-  padding: 0 0 10%;
+  padding: 0 0 5rem;
 }
 
 #customer-reviews img {
   border-radius: 100%;
-  width: 15%;
+  width: 12%;
 }
 #customer-reviews .card-body{
   padding: 5% 5%;

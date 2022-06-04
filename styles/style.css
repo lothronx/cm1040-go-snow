@@ -16,7 +16,7 @@ a:link {
 }
 
 article {
-  margin: 10%;
+  margin: 5% 10%;
 }
 
 /* Color Scheme --------------------------------------*/
@@ -229,13 +229,18 @@ main {
 .body-container {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  margin: 1px var(--side-margin);
+  margin: 0 var(--side-margin);
 }
 
 .body-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.body-container article {
+  justify-self: center;
+  align-self: center;
 }
 
 /* Button CSS ----------------------------------*/
