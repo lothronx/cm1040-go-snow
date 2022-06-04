@@ -87,6 +87,50 @@ a:active {
   text-decoration: none;
 }
 
+/*Header CSS---------------------------------------*/
+header {
+  z-index: 999;
+  width: 100vw;
+  box-shadow: var(--shadow-soft);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: "";
+  justify-self: right;
+  margin: 0;
+  border-radius: 0;
+}
+
+.nav-item {
+  padding: 0.4vw 1.5vw;
+}
+
+.nav-link {
+  color: var(--blue);
+}
+
+.nav-item:hover {
+  transform: perspective(100px) translateZ(5px);
+}
+
+/*Footer CSS---------------------------------------*/
+#bottom-ad {
+  z-index: 999;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding: 0.5vw;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--blue);
+  box-shadow: var(--shadow-soft);
+}
+
 /* Hero Layout -----------------------------------*/
 .hero {
   position: relative;
@@ -129,7 +173,7 @@ a:active {
 .card {
   border-radius: 2vw;
   border: none;
-  margin: 1vw 2vw;
+  margin: 0 2vw;
   flex: 1 0 250px;
   overflow: hidden;
   position: relative;
@@ -186,24 +230,4 @@ a:active {
   color: var(--white);
   background-color: var(--highlight);
   border: none;
-}
-
-/*Header CSS---------------------------------------*/
-header {
-  z-index: 999;
-  width: 100vw;
-  box-shadow: var(--shadow-soft);
-}
-
-/*Footer CSS---------------------------------------*/
-#bottom-ad {
-  z-index: 999;
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  padding: 0.5vw;
-  text-align: center;
-  color: var(--white);
-  background-color: var(--blue);
-  box-shadow: var(--shadow-soft);
 }
