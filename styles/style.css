@@ -87,7 +87,7 @@ header,
   width: 100%;
   display: inline-flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-radius: 0;
   background-color: var(--white);
 }
@@ -194,16 +194,16 @@ main {
 
 /* Card Layout -----------------------------------*/
 .card-container {
-  margin: 3vw 8vw 4vw;
+  margin: 3vw 8vw;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .card {
   border-radius: 2vw;
   border: none;
   margin: 0 2vw;
-  flex: 1 0 250px;
+  flex: 1 0 200px;
   overflow: hidden;
   position: relative;
 }
