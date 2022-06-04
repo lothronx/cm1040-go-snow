@@ -10,6 +10,18 @@
   color: var(--white);
 }
 
+/* stick secondary navbar to the top */
+#secondary-navbar {
+  position: fixed;
+  z-index: 200;
+  top: 66px;
+  width: 100%;
+}
+
+#events {
+  padding-top: 2.1rem;
+}
+
 /* Hero -----------------------------*/
 .hero {
   height: 30vw;
@@ -32,14 +44,14 @@
   margin: 0;
 }
 
+.body-container article {
+  padding: 5% 0;
+}
+
 .body-container figure {
   padding: 8% 5%;
   height: 20vw;
   filter: drop-shadow(var(--shadow-hard));
-}
-
-.body-container article {
-  padding: 5% 0;
 }
 
 .body-container:nth-child(odd) {

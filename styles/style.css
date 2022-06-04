@@ -31,7 +31,7 @@ article {
   --background: #e5e5e54d;
   --shadow-softest: 1px 1px 2px rgba(0, 0, 0, 0.1);
   --shadow-soft: 0 0 8px rgba(0, 0, 0, 0.4);
-  --shadow-hard: 2px 2px 4px black;
+  --shadow-hard: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Typography ----------------------------------------*/
@@ -81,15 +81,15 @@ article > p::first-letter {
   font-size: 1.44rem;
 }
 
-/*Header and Footer CSS---------------------------------------*/
+/* Header and Footer Layout ---------------------------------------*/
 header,
 #footer-main {
-  z-index: 999;
-  width: 100vw;
+  width: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 0;
+  background-color: var(--white);
 }
 
 header,
@@ -97,32 +97,8 @@ header,
   box-shadow: var(--shadow-soft);
 }
 
-footer{
-margin: 4vw 0;
-}
-
-.navbar-nav {
-  display: flex;
-  list-style-type: "";
-  justify-self: right;
-  margin: 0;
-  border-radius: 0;
-}
-
-.nav-item {
-  padding: 0.4vw 1.5vw;
-}
-
-.nav-link {
-  color: var(--blue);
-}
-
-.nav-item:hover {
-  transform: perspective(100px) translateZ(5px);
-}
-
-.nav-link:hover {
-  color: var(--gray);
+footer {
+  margin: 4vw 0;
 }
 
 #copyright-information {
@@ -131,18 +107,57 @@ margin: 4vw 0;
 }
 
 #bottom-ad {
-  z-index: 999;
-  width: 100vw;
-  position: fixed;
-  bottom: 0%;
   padding: 0.5vw;
   text-align: center;
   color: var(--white);
   background-color: var(--blue);
 }
 
-#bottom-ad span{
+#bottom-ad span {
   padding: 0 2vw;
+}
+
+/* stick header to the top */
+header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  margin-top: 66px;
+}
+
+/* stick bottom ad to the bottom */
+#bottom-ad {
+  z-index: 999;
+  position: fixed;
+  bottom: 0%;
+  width: 100vw;
+}
+
+/* Navbar layout ----------------------------------*/
+.navbar-nav {
+  display: flex;
+  list-style-type: "";
+  justify-self: right;
+}
+
+.nav-item {
+  padding: 0.4vw 1.5vw;
+}
+
+.nav-item:hover {
+  transform: perspective(100px) translateZ(5px);
+}
+
+.nav-link {
+  color: var(--blue);
+}
+
+.nav-link:hover {
+  color: var(--gray);
 }
 
 /* Hero Layout -----------------------------------*/
