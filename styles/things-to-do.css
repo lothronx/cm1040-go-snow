@@ -45,11 +45,13 @@
 }
 
 .body-container figure {
-  margin: 10% 5%;
+  padding: 8% 5%;
+  height: 20vw;
+  filter: drop-shadow(var(--shadow-hard));
 }
 
 .body-container article {
-  padding: 20% 0;
+  padding: 5% 0;
 }
 
 .body-container:nth-child(odd) {
@@ -59,8 +61,4 @@
 
 .body-container:nth-child(even) {
   background: linear-gradient(to left, var(--white), var(--background));
-}
-
-.body-container figure {
-  filter: drop-shadow(var(--shadow-hard));
 }
