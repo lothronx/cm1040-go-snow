@@ -23,11 +23,42 @@
 
     <!--include the common header and footer using jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/common.js"></script>
     <script>
       $(function () {
         $("#header").load("header-and-footer/header.html");
         $("#footer").load("header-and-footer/footer.html");
+          
+        // Get the modal
+        var modal = document.getElementById("standardTicketModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("standardTicketBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
       });
+      function boughtStandardTicket()
+        {
+            alert("Thank you and see you soon!");
+        }
     </script>
 	</head>
 
@@ -60,7 +91,7 @@
 								<li>Free kiddies badge</li>
 							</ul>
 						</div>
-						<div class="card-footer"><a class="btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a></div>
+						<div class="card-footer"><a class="btn btn-booking" href="plan-your-visit.html#tickets" id="standardTicketBtn">Purchase Now</a></div>
 					</div>
 			
 					<!-- Tickets option 2: Group tickets -->
@@ -76,7 +107,7 @@
 								<li>Guaranteed joint skating slot</li>
 							</ul>
 						</div>
-						<div class="card-footer"><a class="btn btn-booking" a href="plan-your-visit.html#tickets">Book Now</a></div>
+						<div class="card-footer"><a class="btn btn-booking" a href="plan-your-visit.html#tickets">Purchase Now</a></div>
 					</div>
 			
 					<!-- Tickets option 3: Season pass -->
@@ -93,7 +124,7 @@
 								<li>Exclusive seating area</li>
 							</ul>
 						</div>
-						<div class="card-footer"><a class="btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a></div>
+						<div class="card-footer"><a class="btn btn-booking" href="plan-your-visit.html#tickets">Purchase Now</a></div>
 					</div>
 				</div>
 			</section>
@@ -152,6 +183,28 @@
 
     	<!-- Footer -->
     	<footer id="footer"></footer>
+                
+        
+
+<!-- The Modal -->
+<div id="standardTicketModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Standard Ticket</h3>
+    <form onsubmit="boughtStandardTicket()">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
 
     </body>
 </html>
