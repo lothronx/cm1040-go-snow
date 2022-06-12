@@ -37,6 +37,7 @@ span {
 ul {
   list-style-type: "✓ ";
   padding: 0 0 0 1rem;
+  color: green;
 }
 
 .card {

@@ -44,6 +44,11 @@
   margin: 0;
 }
 
+.body-container h3 {
+  color: #9c1c3c;
+  text-shadow: 0 0 8px #9c1c3c;
+  font-style: oblique;
+}
 .body-container figure {
   height: 20vw;
   justify-self: center;
