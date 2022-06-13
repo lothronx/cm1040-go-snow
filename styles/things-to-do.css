@@ -45,8 +45,8 @@
 }
 
 .body-container h3 {
-  color: #9c1c3c;
-  text-shadow: 0 0 8px #9c1c3c;
+  color: var(--highlight);
+  text-shadow: 0 0 8px var(--highlight);
   font-style: oblique;
 }
 .body-container figure {
