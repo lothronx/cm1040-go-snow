@@ -14,7 +14,7 @@
 
 #major-attractions .intro:first-line {
   color: var(--blue);
-  text-shadow: 3px 3px 5px grey;
+  text-shadow: 3px 3px 5px var(--gray);
 }
 
 #major-attractions .card {
@@ -26,7 +26,7 @@
 
 #major-attractions .card-body::first-line {
   color: var(--white);
-  text-shadow: 3px 3px 5px #9c1c3c;
+  text-shadow: 3px 3px 5px var(--highlight);
 }
 
 /* About Park -----------------------------------*/
