@@ -36,7 +36,8 @@
         var btn = document.getElementById("standardTicketBtn");
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.getElementById("fclose");
+        var gspan = document.getElementById("gclose");
 
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
@@ -58,12 +59,19 @@
         span.onclick = function() {
           modal.style.display = "none";
         }
+         gspan.onclick = function() {
+          groupModal.style.display = "none";
+        }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
           if (event.target == modal) {
             modal.style.display = "none";
           }
+        if (event.target == groupModal) {
+            groupModal.style.display = "none";
+          } 
+            
         }
       });
         function boughtTicket()
@@ -118,7 +126,7 @@
 								<li>Guaranteed joint skating slot</li>
 							</ul>
 						</div>
-						<div class="card-footer"><a class="btn btn-booking" a href="plan-your-visit.html#tickets" id="groupTicketBtn">>Purchase Now</a></div>
+						<div class="card-footer"><a class="btn btn-booking" href="plan-your-visit.html#tickets" id="groupTicketBtn">>Purchase Now</a></div>
 					</div>
 			
 					<!-- Tickets option 3: Season pass -->
@@ -202,7 +210,7 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span id="fclose" class="close">&times;</span>
     <h3>Standard Ticket</h3>
     <b><p id="finalAmount">&pound; 28</p></b>
     <form onsubmit="boughtStandardTicket()">
@@ -213,7 +221,7 @@
             <input type="number" id="fticketnumber" name="fticketnumber"  maxlength="4" value="1" onchange="updateFinalAmount(28,this.value)"><br><br>
         </div>
         <input type="text" id="fname" name="fname" value="" placeholder="Name"><br><br>
-        <input type="text" id="Credit Card Number" name="fccn" required placeholder="CreditCard Number"><br><br>    
+        <input type="text" id="fccn" name="fccn" required placeholder="CreditCard Number"><br><br>    
       
         <input type="password" id="fcvc" name="fcvc" minlegth="3" maxlength="4" required placeholder="CVC/CVV2"><br><br>    
         
@@ -221,7 +229,7 @@
             <label for="fcvc">Expiry:</label>
         </div>
         <div class="col-right">
-            <input type="month" id="fcvc" name="fexpiry" min=""  required>
+            <input type="month" id="fexpiry" name="fexpiry" min=""  required>
         </div>
         <br><br><br>
         <input type="submit" value="Pay">
@@ -237,25 +245,26 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span id="gclose" class="close">&times;</span>
     <h3>Group Ticket</h3>
+    <b><p id="finalGroupAmount">&pound; 24</p></b>
     <form onsubmit="boughtGroupTicket()">
       <div class="col-left">
             <label for="fname">No of Group Tickets(5 persons):</label>
         </div>
         <div class="col-right">
-            <input type="number" id="fticketnumber" name="fticketnumber"  maxlength="4" value="1" onchange="updateFinalAmount(24,this.value)"><br><br>
+            <input type="number" id="fgroupticketnumber" name="fgroupticketnumber"  maxlength="4" value="1" onchange="updateGroupFinalAmount(this.value)"><br><br>
         </div>
-        <input type="text" id="fname" name="fname" value="" placeholder="Name"><br><br>
-        <input type="text" id="Credit Card Number" name="fccn" required placeholder="CreditCard Number"><br><br>    
+        <input type="text" id="fgname" name="fgname" value="" placeholder="Name"><br><br>
+        <input type="text" id="fgccn" name="fgccn" required placeholder="CreditCard Number"><br><br>    
       
-        <input type="password" id="fcvc" name="fcvc" minlegth="3" maxlength="4" required placeholder="CVC/CVV2"><br><br>    
+        <input type="password" id="fgcvc" name="fgcvc" minlegth="3" maxlength="4" required placeholder="CVC/CVV2"><br><br>    
         
         <div class="col-left">
-            <label for="fcvc">Expiry:</label>
+            <label for="fgcvc">Expiry:</label>
         </div>
         <div class="col-right">
-            <input type="month" id="fcvc" name="fexpiry" min=""  required>
+            <input type="month" id="fgexpiry" name="fgexpiry" min=""  required>
         </div>
         <br><br><br>
         <input type="submit" value="Pay">

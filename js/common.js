@@ -51,3 +51,13 @@ function updateFinalAmount(price,count){
     
     
 }
+
+function updateGroupFinalAmount(count){
+    var finalAmount = 24 * count;
+    
+    var finalAmountElement = document.getElementById('finalGroupAmount');
+    
+    finalAmountElement.innerHTML = "&pound;" +  finalAmount;
+    
+    
+}
