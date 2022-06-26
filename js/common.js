@@ -38,26 +38,4 @@ $(() => {
     }, 600);
   };
 });
-function boughtStandardTicket() {
-  alert("Thank you and see you soon!");
-}
 
-function updateFinalAmount(price,count){
-    var finalAmount = price * count;
-    
-    var finalAmountElement = document.getElementById('finalAmount');
-    
-    finalAmountElement.innerHTML = "&pound;" +  finalAmount;
-    
-    
-}
-
-function updateGroupFinalAmount(count){
-    var finalAmount = 24 * count;
-    
-    var finalAmountElement = document.getElementById('finalGroupAmount');
-    
-    finalAmountElement.innerHTML = "&pound;" +  finalAmount;
-    
-    
-}
