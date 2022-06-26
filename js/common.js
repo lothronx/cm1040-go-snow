@@ -41,3 +41,13 @@ $(() => {
 function boughtStandardTicket() {
   alert("Thank you and see you soon!");
 }
+
+function updateFinalAmount(price,count){
+    var finalAmount = price * count;
+    
+    var finalAmountElement = document.getElementById('finalAmount');
+    
+    finalAmountElement.innerHTML = "&pound;" +  finalAmount;
+    
+    
+}
