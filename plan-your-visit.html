@@ -20,16 +20,33 @@
 		<link rel="stylesheet" type="text/css" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/plan-your-visit.css" />
-
-    <!--include the common header and footer using jQuery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/plan-your-visit.js"></script>
 	</head>
 
     <body>
-   		<!-- header -->
-    	<header id="header"></header>
+   		 <!-- Header -->
+				<header>
+				<!-- logo with link to home page -->
+				<a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" height="60" /></a>
+				<!-- Opening Hours -->
+				<span class="small-text">Opening today <time>9:00 AM</time> - <time>6:00 PM</time></span>
+				<!-- Primary Navigation -->
+				<nav>
+					<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="things-to-do.html">Things To Do</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="plan-your-visit.html">Plan Your Visit</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+					</li>
+					</ul>
+				</nav>
+				</header>
 		
 		<main>
 			<!--Section 1: Tickets information-->
@@ -147,7 +164,49 @@
 		</main>
 
     	<!-- Footer -->
-    	<footer id="footer"></footer>
+    	<footer>
+  <!--Footer Section 1: logo, contact information, and bottom nav bar-->
+  <div id="footer-main">
+    <!--logo-->
+    <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" /></a>
+
+    <!--contact information-->
+    <span class="small-text">
+      <b>Contact information</b><br />
+      Address: Senate House, Malet St, London WC1E 7HU, UK<br />
+      Phone: +44 20 7862 8000<br />
+      Email:
+      <a href="mailto:CustomerService@GoSnow.com" target="_blank">CustomerService@GoSnow.com</a>
+    </span>
+
+    <!--bottom navigation-->
+    <nav class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link btn" href="things-to-do.html">Things To Do</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn" href="plan-your-visit.html">Plan Your Visit</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+      </li>
+    </nav>
+  </div>
+
+  <!--Footer Section 2: copyright information-->
+  <div id="copyright-information" class="small-text">
+    <span
+      >Copyrights © 2022 All Rights Reserved by GoSnow.<br />
+      Website Developed By Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury.</span
+    >
+  </div>
+
+  <!--Footer Section 3: bottom Advertisement-->
+  <div id="bottom-ad">
+    <span>Buy tickets today and enjoy 20% off</span>
+    <a class="btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+  </div>
+</footer>
                 
         
 

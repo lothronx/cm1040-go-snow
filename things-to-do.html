@@ -11,20 +11,11 @@
       name="description"
       content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!"
     />
-    <meta
-      name="keywords"
-      content="theme park, skiing, snowboard, ice sculpture"
-    />
-    <meta
-      name="author"
-      content="Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury"
-    />
+    <meta name="keywords" content="theme park, skiing, snowboard, ice sculpture" />
+    <meta name="author" content="Yue Wu, Fazley Chowdhury, Paige Goetsch, and Myo Min Khaing" />
 
     <!--Open Graph tags-->
-    <meta
-      property="og:title"
-      content="Explore GoSnow today and enjoy 20% off"
-    />
+    <meta property="og:title" content="Explore GoSnow today and enjoy 20% off" />
     <meta property="og:image" content="assets/images/logo。jpeg" />
     <meta
       property="og:description"
@@ -35,20 +26,33 @@
     <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/things-to-do.css" />
-
-    <!--include the common header and footer using jQuery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>
-      $(function () {
-        $("#header").load("header-and-footer/header.html");
-        $("#footer").load("header-and-footer/footer.html");
-      });
-    </script>
   </head>
 
   <body>
     <!-- Header -->
-    <header id="header"></header>
+    <header>
+      <!-- logo with link to home page -->
+      <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" height="60" /></a>
+      <!-- Opening Hours -->
+      <span class="small-text">Opening today <time>9:00 AM</time> - <time>6:00 PM</time></span>
+      <!-- Primary Navigation -->
+      <nav>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="things-to-do.html">Things To Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan-your-visit.html">Plan Your Visit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <!-- Secondary nav bar -->
@@ -71,14 +75,7 @@
         <!-- Video header -->
         <div class="hero">
           <h2 class="hero-text">EVENTS</h2>
-          <video
-            width="99.9%"
-            autoplay
-            loop
-            muted
-            playsinline
-            poster="/assets/images/events-poster.jpg"
-          >
+          <video width="99.9%" autoplay loop muted playsinline poster="/assets/images/events-poster.jpg">
             <source src="assets/videos/events-hero.webm" type="video/webm" />
             <source src="assets/videos/events-hero.mp4" type="video/mp4" />
             Your browser does not support this video.
@@ -89,10 +86,8 @@
           <article>
             <h3>The Disco on Ice Dance Competition!</h3>
             <p>
-              Do you have what it takes to be our next ‘Disco On Ice’ champion?
-              Join us at one of our most popular events this coming month and
-              stand the chance to win prizes for your moves and to have some
-              groovy fun!
+              Do you have what it takes to be our next ‘Disco On Ice’ champion? Join us at one of our most popular events this coming month
+              and stand the chance to win prizes for your moves and to have some groovy fun!
             </p>
           </article>
           <figure>
@@ -104,17 +99,12 @@
           <article>
             <h3>Ice Sculpting Class</h3>
             <p>
-              Bring the young ones along to our classes led by our friendly,
-              capable staff who will teach them the do’s and don’ts of creating
-              your own icy masterpiece! We also offer classes for older age
-              groups.
+              Bring the young ones along to our classes led by our friendly, capable staff who will teach them the do’s and don’ts of
+              creating your own icy masterpiece! We also offer classes for older age groups.
             </p>
           </article>
           <figure>
-            <img
-              src="assets/images/ice-sculting-classes.jpeg"
-              alt="Ice Sculpting Class"
-            />
+            <img src="assets/images/ice-sculting-classes.jpeg" alt="Ice Sculpting Class" />
           </figure>
         </div>
       </section>
@@ -124,18 +114,8 @@
         <!-- Video header -->
         <div class="hero">
           <h2 class="hero-text">ATTRACTIONS</h2>
-          <video
-            width="99.9%"
-            autoplay
-            loop
-            muted
-            playsinline
-            poster="assets/images/attractions-poster.jpeg"
-          >
-            <source
-              src="assets/videos/attractions-hero.webm"
-              type="video/webm"
-            />
+          <video width="99.9%" autoplay loop muted playsinline poster="assets/images/attractions-poster.jpeg">
+            <source src="assets/videos/attractions-hero.webm" type="video/webm" />
             <source src="assets/videos/attractions-hero.mp4" type="video/mp4" />
             Your browser does not support this video.
           </video>
@@ -145,10 +125,8 @@
           <article>
             <h3>Ice Sculptures</h3>
             <p>
-              At GoSnow, we pride ourselves on our state-of-the-art gallery of
-              ice sculptures. Not only do the beautiful pieces on display leave
-              you speechless, but the unique layout of the artwork is what makes
-              this feature so unique and special.
+              At GoSnow, we pride ourselves on our state-of-the-art gallery of ice sculptures. Not only do the beautiful pieces on display
+              leave you speechless, but the unique layout of the artwork is what makes this feature so unique and special.
             </p>
           </article>
           <figure>
@@ -161,10 +139,8 @@
           <article>
             <h3>Ice Rink</h3>
             <p>
-              Undoubtedly our most enjoyed feature from all age groups, our ice
-              rink is one that can be skated on for hours. The rink allows you
-              the perfect balance of time to practice your moves and then put
-              them to the test in 'disco' mode.
+              Undoubtedly our most enjoyed feature from all age groups, our ice rink is one that can be skated on for hours. The rink allows
+              you the perfect balance of time to practice your moves and then put them to the test in 'disco' mode.
             </p>
           </article>
           <figure>
@@ -177,9 +153,8 @@
           <article>
             <h3>Sledging car</h3>
             <p>
-              The most fun thing to do is to slide around on our sledging cars!
-              Always thoroughly enjoyed by all of our guests, so make sure you
-              book your tickets in advance to avoid disappointment!
+              The most fun thing to do is to slide around on our sledging cars! Always thoroughly enjoyed by all of our guests, so make sure
+              you book your tickets in advance to avoid disappointment!
             </p>
           </article>
           <figure>
@@ -192,17 +167,12 @@
           <article>
             <h3>Snowboarding</h3>
             <p>
-              As inclusive as GoSnow is for all ages, there are some features
-              with age restrictions. Luckily we have you covered with a snowy
-              playground designed specifically to keep your children busy while
-              you experience it all!
+              As inclusive as GoSnow is for all ages, there are some features with age restrictions. Luckily we have you covered with a
+              snowy playground designed specifically to keep your children busy while you experience it all!
             </p>
           </article>
           <figure>
-            <img
-              src="assets/images/snow-boarding-yellow.jpeg"
-              alt="Snowboarding"
-            />
+            <img src="assets/images/snow-boarding-yellow.jpeg" alt="Snowboarding" />
           </figure>
         </div>
 
@@ -211,17 +181,12 @@
           <article>
             <h3>Snow playground</h3>
             <p>
-              As inclusive as GoSnow is for all ages, there are some features
-              with age restrictions. Luckily we have you covered with a snowy
-              playground designed specifically to keep your children busy while
-              you experience it all!
+              As inclusive as GoSnow is for all ages, there are some features with age restrictions. Luckily we have you covered with a
+              snowy playground designed specifically to keep your children busy while you experience it all!
             </p>
           </article>
           <figure>
-            <img
-              src="assets/images/snow-playground.jpeg"
-              alt="Snow playground"
-            />
+            <img src="assets/images/snow-playground.jpeg" alt="Snow playground" />
           </figure>
         </div>
       </section>
@@ -231,14 +196,7 @@
         <!-- Video header -->
         <div class="hero">
           <h2 class="hero-text">SERVICES</h2>
-          <video
-            width="99.9%"
-            autoplay
-            loop
-            muted
-            playsinline
-            poster="assets/images/service-poster.jpeg"
-          >
+          <video width="99.9%" autoplay loop muted playsinline poster="assets/images/service-poster.jpeg">
             <source src="assets/videos/services-hero.webm" type="video/webm" />
             <source src="assets/videos/services-hero.mp4" type="video/mp4" />
             Your browser does not support this video.
@@ -250,10 +208,8 @@
           <article>
             <h3>Delicious Food Stalls</h3>
             <p>
-              The most difficult part of your stay at our theme park, is
-              deciding which delicious food vendor you will pick to indulge in.
-              The choice of stalls is endless, but no matter which is chose, it
-              will not be a mistake!
+              The most difficult part of your stay at our theme park, is deciding which delicious food vendor you will pick to indulge in.
+              The choice of stalls is endless, but no matter which is chose, it will not be a mistake!
             </p>
           </article>
           <figure>
@@ -266,9 +222,8 @@
           <article>
             <h3>Accommodation</h3>
             <p>
-              After a full day of excitement, GoSnow also provides comforting
-              rooms for an overnight stay. Fully equipped with everything you
-              need including room service, WiFi, TV, heaters and so much more!
+              After a full day of excitement, GoSnow also provides comforting rooms for an overnight stay. Fully equipped with everything
+              you need including room service, WiFi, TV, heaters and so much more!
             </p>
           </article>
           <figure>
@@ -281,10 +236,8 @@
           <article>
             <h3>Ski Training</h3>
             <p>
-              We offer only thr best, simple ski lessons in order to ensure you
-              enjoy your skiing while feeling secure in yourself! If you lack
-              experience, we have got your back! Book in advance as slots go
-              quickly!
+              We offer only thr best, simple ski lessons in order to ensure you enjoy your skiing while feeling secure in yourself! If you
+              lack experience, we have got your back! Book in advance as slots go quickly!
             </p>
           </article>
           <figure>
@@ -295,6 +248,48 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer"></footer>
+    <footer>
+      <!--Footer Section 1: logo, contact information, and bottom nav bar-->
+      <div id="footer-main">
+        <!--logo-->
+        <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" /></a>
+
+        <!--contact information-->
+        <span class="small-text">
+          <b>Contact information</b><br />
+          Address: Senate House, Malet St, London WC1E 7HU, UK<br />
+          Phone: +44 20 7862 8000<br />
+          Email:
+          <a href="mailto:CustomerService@GoSnow.com" target="_blank">CustomerService@GoSnow.com</a>
+        </span>
+
+        <!--bottom navigation-->
+        <nav class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn" href="things-to-do.html">Things To Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="plan-your-visit.html">Plan Your Visit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+          </li>
+        </nav>
+      </div>
+
+      <!--Footer Section 2: copyright information-->
+      <div id="copyright-information" class="small-text">
+        <span
+          >Copyrights © 2022 All Rights Reserved by GoSnow.<br />
+          Website Developed By Yue Wu, Fazley Chowdhury, Paige Goetsch, and Myo Min Khaing.</span
+        >
+      </div>
+
+      <!--Footer Section 3: bottom Advertisement-->
+      <div id="bottom-ad">
+        <span>Buy tickets today and enjoy 20% off</span>
+        <a class="btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+      </div>
+    </footer>
   </body>
 </html>

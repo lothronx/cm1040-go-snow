@@ -37,7 +37,7 @@ span {
 ul {
   list-style-type: "✓ ";
   padding: 0 0 0 1rem;
-  color: green;
+  color: var(--gray-opaque);
 }
 
 .card {
@@ -59,9 +59,9 @@ ul {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: ; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  overflow: scroll; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -90,7 +90,12 @@ ul {
 }
 
 /* input field styling */
-input[type=text], input[type=number],input[type=password],input[type=month], select, textarea {
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="month"],
+select,
+textarea {
   width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -103,8 +108,8 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -113,13 +118,15 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }

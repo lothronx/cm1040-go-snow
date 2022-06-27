@@ -1,7 +1,4 @@
 $(() => {
-  $("#header").load("header-and-footer/header.html");
-  $("#footer").load("header-and-footer/footer.html");
-
   // Get the modal
   var modal = document.getElementById("standardTicketModal");
 
@@ -38,4 +35,3 @@ $(() => {
     }, 600);
   };
 });
-

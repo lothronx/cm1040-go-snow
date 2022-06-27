@@ -11,20 +11,11 @@
       name="description"
       content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!"
     />
-    <meta
-      name="keywords"
-      content="theme park, skiing, snowboard, ice sculpture"
-    />
-    <meta
-      name="author"
-      content="Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury"
-    />
+    <meta name="keywords" content="theme park, skiing, snowboard, ice sculpture" />
+    <meta name="author" content="Yue Wu, Fazley Chowdhury, Paige Goetsch, and Myo Min Khaing" />
 
     <!--open graph tags-->
-    <meta
-      property="og:title"
-      content="Explore GoSnow today and enjoy 20% off"
-    />
+    <meta property="og:title" content="Explore GoSnow today and enjoy 20% off" />
     <meta property="og:image" content="assets/images/logo.png" />
     <meta
       property="og:description"
@@ -32,54 +23,51 @@
     />
 
     <!--css-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/index.css" />
-
-    <!--include the common header and footer using jQuery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>
-      $(function () {
-        $("#header").load("header-and-footer/header.html");
-        $("#footer").load("header-and-footer/footer.html");
-      });
-    </script>
   </head>
 
   <body>
     <!-- Header -->
-    <header id="header"></header>
+    <header>
+      <!-- logo with link to home page -->
+      <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" height="60" /></a>
+      <!-- Opening Hours -->
+      <span class="small-text">Opening today <time>9:00 AM</time> - <time>6:00 PM</time></span>
+      <!-- Primary Navigation -->
+      <nav>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="things-to-do.html">Things To Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan-your-visit.html">Plan Your Visit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <!-- Section 1: main hero with video -->
       <section class="hero">
-        <video
-          width="99.9%"
-          autoplay
-          loop
-          muted
-          playsinline
-          poster="assets/images/main-poster.jpg"
-        >
+        <video width="99.9%" autoplay loop muted playsinline poster="assets/images/main-poster.jpg">
           <source src="assets/videos/main-hero.webm" type="video/webm" />
           <source src="assets/videos/main-hero.mp4" type="video/mp4" />
           <!-- catch if html5 is not supported -->
           Your browser does not support HTML5 video.
-          <a href="assets/videos/main-hero.mp4"
-            >Click here to view original Video</a
-          >
+          <a href="assets/videos/main-hero.mp4">Click here to view original Video</a>
         </video>
         <!-- overlay text with offer and button for buying ticket -->
         <span class="hero-text">20% Special Offer<br />Ends In 2 Days</span>
-        <a
-          class="big-text btn btn-booking animate__animated animate__pulse"
-          href="plan-your-visit.html"
-          >Click Here to Buy Tickets Now</a
-        >
+        <a class="big-text btn btn-booking animate__animated animate__pulse" href="plan-your-visit.html">Click Here to Buy Tickets Now</a>
       </section>
 
       <!-- Section 2: three major attractions -->
@@ -88,9 +76,8 @@
         <div class="intro">
           <h1>Enjoy the real ice and snow</h1>
           <p class="big-text">
-            Looking to have some one-of-a-kind fun? Look no further! At GoSnow,
-            we are committed to providing nothing but safe and unforgettable
-            adventures!
+            Looking to have some one-of-a-kind fun? Look no further! At GoSnow, we are committed to providing nothing but safe and
+            unforgettable adventures!
           </p>
         </div>
         <!-- Three columns of major attractions-->
@@ -100,10 +87,7 @@
             <img src="assets/images/IceSculpture.JPG" alt="Ice Sculptures" />
             <div class="card-body">
               <h3>Ice Sculptures</h3>
-              <p>
-                Our beautiful display of unique and delicate ice sculptures are
-                something to be seen!
-              </p>
+              <p>Our beautiful display of unique and delicate ice sculptures are something to be seen!</p>
             </div>
           </a>
           <!--Major attraction 2: Ice Rink -->
@@ -112,10 +96,7 @@
             <img src="assets/images/IceRink.JPG" alt="Ice Rink" />
             <div class="card-body">
               <h3>Ice Rink</h3>
-              <p>
-                Our Ice Rink is suitable for all skating levels, with our famous
-                'disco' mode for an extra bit of fun!
-              </p>
+              <p>Our Ice Rink is suitable for all skating levels, with our famous 'disco' mode for an extra bit of fun!</p>
             </div>
           </a>
           <!--Major attraction 3: Snowboarding -->
@@ -123,10 +104,7 @@
             <img src="assets/images/Snowboarding.JPG" alt="Snowboarding" />
             <div class="card-body">
               <h3>Snowboarding</h3>
-              <p>
-                Our snowboarding ledge is suitable for the whole family, safe
-                enough to ensure no one gets left out!
-              </p>
+              <p>Our snowboarding ledge is suitable for the whole family, safe enough to ensure no one gets left out!</p>
             </div>
           </a>
         </div>
@@ -142,17 +120,12 @@
         <article>
           <h2>About GoSnow</h2>
           <p>
-            GoSnow is globally rated one of the best theme parks, boasting its
-            unique and undeniably awesome features! Along with our renowned ice
-            rink, which allows free-skating and an ice disco, we have many other
-            activities for the whole family to partake in. While ensuring
-            maximum fun is being had, GoSnow has emphasized how seriously we
-            take our safety standards, being fully equipped with excellent
-            paramedic services as well as safety precautions taken at every one
-            of our features. GoSnow prides itself in the versatility of our
-            theme park being both child and adult friendly simultaneously. We
-            hope to see you at our theme park, so we can deliver yo with the
-            experience of a lifetime!
+            GoSnow is globally rated one of the best theme parks, boasting its unique and undeniably awesome features! Along with our
+            renowned ice rink, which allows free-skating and an ice disco, we have many other activities for the whole family to partake in.
+            While ensuring maximum fun is being had, GoSnow has emphasized how seriously we take our safety standards, being fully equipped
+            with excellent paramedic services as well as safety precautions taken at every one of our features. GoSnow prides itself in the
+            versatility of our theme park being both child and adult friendly simultaneously. We hope to see you at our theme park, so we
+            can deliver yo with the experience of a lifetime!
           </p>
         </article>
       </section>
@@ -162,10 +135,7 @@
         <!-- Customer review 1-->
         <div class="card">
           <div class="card-body">
-            <blockquote class="big-text">
-              “The perfect escape from city life! Will definitely be coming back
-              again soon!”
-            </blockquote>
+            <blockquote class="big-text">“The perfect escape from city life! Will definitely be coming back again soon!”</blockquote>
           </div>
           <div class="card-footer">
             <img src="assets/images/Peige.jpg" alt="Paige Goetsch avatar" />
@@ -176,8 +146,7 @@
         <div class="card">
           <div class="card-body">
             <blockquote class="big-text">
-              "A wonderful place for the whole family. My children absolutely
-              loved it. Definitely recommended!"
+              "A wonderful place for the whole family. My children absolutely loved it. Definitely recommended!"
             </blockquote>
           </div>
           <div class="card-footer">
@@ -188,10 +157,7 @@
         <!-- Customer review 3-->
         <div class="card">
           <div class="card-body">
-            <blockquote class="big-text">
-              "One of the best experiences of my life! The disco ice rink is a
-              super feature."
-            </blockquote>
+            <blockquote class="big-text">"One of the best experiences of my life! The disco ice rink is a super feature."</blockquote>
           </div>
           <div class="card-footer">
             <img src="assets/images/Yue.JPG" alt="Yue Wu avatar" />
@@ -202,6 +168,48 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer"></footer>
+    <footer>
+      <!--Footer Section 1: logo, contact information, and bottom nav bar-->
+      <div id="footer-main">
+        <!--logo-->
+        <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" /></a>
+
+        <!--contact information-->
+        <span class="small-text">
+          <b>Contact information</b><br />
+          Address: Senate House, Malet St, London WC1E 7HU, UK<br />
+          Phone: +44 20 7862 8000<br />
+          Email:
+          <a href="mailto:CustomerService@GoSnow.com" target="_blank">CustomerService@GoSnow.com</a>
+        </span>
+
+        <!--bottom navigation-->
+        <nav class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn" href="things-to-do.html">Things To Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="plan-your-visit.html">Plan Your Visit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+          </li>
+        </nav>
+      </div>
+
+      <!--Footer Section 2: copyright information-->
+      <div id="copyright-information" class="small-text">
+        <span
+          >Copyrights © 2022 All Rights Reserved by GoSnow.<br />
+          Website Developed By Yue Wu, Fazley Chowdhury, Paige Goetsch, and Myo Min Khaing.</span
+        >
+      </div>
+
+      <!--Footer Section 3: bottom Advertisement-->
+      <div id="bottom-ad">
+        <span>Buy tickets today and enjoy 20% off</span>
+        <a class="btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+      </div>
+    </footer>
   </body>
 </html>

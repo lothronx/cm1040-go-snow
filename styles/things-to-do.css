@@ -46,7 +46,7 @@
 
 .body-container h3 {
   color: var(--highlight);
-  text-shadow: 0 0 8px var(--highlight);
+  text-shadow: var(--shadow-red);
   font-style: oblique;
 }
 .body-container figure {
