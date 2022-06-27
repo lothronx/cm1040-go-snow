@@ -27,9 +27,9 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/plan-your-visit.css" />
 
-    <!--js-->
+    <!--JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/plan-your-visit.js"></script>
   </head>
 
   <body>
@@ -249,6 +249,121 @@
       </div>
     </footer>
 
-		
+    <!-- Bonus: The Modals -->
+    <section>
+      <!-- Modal 1: Standard Tickets -->
+      <div id="standardTicketModal" class="modal">
+        <div class="modal-content">
+          <span id="fclose" class="close">&times;</span>
+          <h3>Standard Ticket</h3>
+          <b><p id="finalAmount">&pound; 28</p></b>
+          <form onsubmit="boughtStandardTicket()">
+            <div class="col-left">
+              <label for="fticketnumber">No. of Persons:</label>
+            </div>
+            <div class="col-right">
+              <input
+                type="number"
+                id="fticketnumber"
+                name="fticketnumber"
+                maxlength="4"
+                value="1"
+                onchange="updateFinalAmount(28,this.value)"
+              /><br /><br />
+            </div>
+            <input type="text" id="fname" name="fname" value="" placeholder="Name" /><br /><br />
+            <input type="text" id="fccn" name="fccn" required placeholder="CreditCard Number" /><br /><br />
+            <input type="password" id="fcvc" name="fcvc" minlength="3" maxlength="4" required placeholder="CVC/CVV2" /><br /><br />
+            <div class="col-left">
+              <label for="fcvc">Expiry:</label>
+            </div>
+            <div class="col-right">
+              <input type="month" id="fexpiry" name="fexpiry" min="" required />
+            </div>
+            <br /><br /><br />
+            <input type="submit" value="Pay" />
+            <br /><br />
+          </form>
+        </div>
+      </div>
+
+      <!-- group ticket modal -->
+      <div id="groupTicketModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="gclose" class="close">&times;</span>
+          <h3>Group Ticket</h3>
+          <b><p id="finalGroupAmount">&pound; 24</p></b>
+          <form onsubmit="boughtGroupTicket()">
+            <div class="col-left">
+              <label for="fgroupticketnumber">No. of Group Tickets(5 persons):</label>
+            </div>
+            <div class="col-right">
+              <input
+                type="number"
+                id="fgroupticketnumber"
+                name="fgroupticketnumber"
+                maxlength="4"
+                value="1"
+                onchange="updateGroupFinalAmount(this.value)"
+              /><br /><br />
+            </div>
+            <input type="text" id="fgname" name="fgname" value="" placeholder="Name" /><br /><br />
+            <input type="text" id="fgccn" name="fgccn" required placeholder="CreditCard Number" /><br /><br />
+
+            <input type="password" id="fgcvc" name="fgcvc" minlength="3" maxlength="4" required placeholder="CVC/CVV2" /><br /><br />
+
+            <div class="col-left">
+              <label for="fgcvc">Expiry:</label>
+            </div>
+            <div class="col-right">
+              <input type="month" id="fgexpiry" name="fgexpiry" min="" required />
+            </div>
+            <br /><br /><br />
+            <input type="submit" value="Pay" />
+            <br /><br />
+          </form>
+        </div>
+      </div>
+
+      <!-- season ticket modal -->
+      <div id="seasonTicketModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="sclose" class="close">&times;</span>
+          <h3>Group Ticket</h3>
+          <b><p id="finalSeasonAmount">&pound; 240</p></b>
+          <form onsubmit="boughtSeasonTicket()">
+            <div class="col-left">
+              <label for="fseasonticketnumber">No. of Season Tickets:</label>
+            </div>
+            <div class="col-right">
+              <input
+                type="number"
+                id="fseasonticketnumber"
+                name="fseasonticketnumber"
+                maxlength="4"
+                value="1"
+                onchange="updateSeasonFinalAmount(this.value)"
+              /><br /><br />
+            </div>
+            <input type="text" id="fsname" name="fsname" value="" placeholder="Name" /><br /><br />
+            <input type="text" id="fsccn" name="fsccn" required placeholder="CreditCard Number" /><br /><br />
+
+            <input type="password" id="fscvc" name="fscvc" minlength="3" maxlength="4" required placeholder="CVC/CVV2" /><br /><br />
+
+            <div class="col-left">
+              <label for="fscvc">Expiry:</label>
+            </div>
+            <div class="col-right">
+              <input type="month" id="fsexpiry" name="fsexpiry" min="" required />
+            </div>
+            <br /><br /><br />
+            <input type="submit" value="Pay" />
+            <br /><br />
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
