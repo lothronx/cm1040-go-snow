@@ -38,6 +38,4 @@ $(() => {
     }, 600);
   };
 });
-function boughtStandardTicket() {
-  alert("Thank you and see you soon!");
-}
+
