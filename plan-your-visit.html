@@ -1,318 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!--basic information-->
-		<link rel="icon" href="assets/images/logo.png">
-		<title>GoSnow | Plan your visit</title>
-		<meta name="description" content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!">
-		<meta name="keywords" content="theme park, skiing, snowboard, ice sculpture">
-		<meta name="author" content="Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury">
+    <!--basic information-->
+    <link rel="icon" href="assets/images/logo.png" />
+    <title>GoSnow | Plan your visit</title>
+    <meta
+      name="description"
+      content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!"
+    />
+    <meta name="keywords" content="theme park, skiing, snowboard, ice sculpture" />
+    <meta name="author" content="Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury" />
 
-		<!--Open Graph tags-->
-		<meta property="og:title" content="Explore GoSnow today and enjoy 20% off">
-		<meta property="og:image" content="assets/images/logo.png">
-		<meta property="og:description" content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!">
-		
-		<!--css-->
-		<link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <!--Open Graph tags-->
+    <meta property="og:title" content="Explore GoSnow today and enjoy 20% off" />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta
+      property="og:description"
+      content="GoSnow is rated one of the best theme parks in London, with renowned ice rink, snowboard area, ice sculptures exhibition, and more to explore!"
+    />
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/plan-your-visit.css" />
-	</head>
 
-    <body>
-   		 <!-- Header -->
-				<header>
-				<!-- logo with link to home page -->
-				<a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" height="60" /></a>
-				<!-- Opening Hours -->
-				<span class="small-text">Opening today <time>9:00 AM</time> - <time>6:00 PM</time></span>
-				<!-- Primary Navigation -->
-				<nav>
-					<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="things-to-do.html">Things To Do</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="plan-your-visit.html">Plan Your Visit</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
-					</li>
-					</ul>
-				</nav>
-				</header>
+    <!--js-->
+    <script src="js/common.js"></script>
+    <script src="js/plan-your-visit.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- logo with link to home page -->
+      <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" height="60" /></a>
+      <!-- Opening Hours -->
+      <span class="small-text">Opening today <time>9:00 AM</time> - <time>6:00 PM</time></span>
+      <!-- Primary Navigation -->
+      <nav>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="things-to-do.html">Things To Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan-your-visit.html">Plan Your Visit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Section 1: Tickets information-->
+      <section id="tickets">
+        <!-- brief intro -->
+        <div class="intro">
+          <h2>Theme Park Entry Tickets</h2>
+          <p class="big-text">Save up to 20% when you book theme park tickets in advance. Explore our range of entry tickets below.</p>
+        </div>
+
+        <!-- Three columns of tickets options -->
+        <div class="card-container">
+          <!-- Tickets option 1: Standard tickets -->
+          <div class="card">
+            <img src="assets/images/standard-tickets.jpg" alt="Standard Tickets" />
+            <div class="card-body">
+              <h3>Standard Tickets</h3>
+              <span class="price">£28</span><span class="original-price">From £35 .ea</span><span class="discount">20% Off</span>
+              <ul>
+                <li>Access for the whole day</li>
+                <li>Access to all activities</li>
+                <li>Free bathroom access</li>
+                <li>Seating area access</li>
+                <li>Free kiddies badge</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-booking" href="plan-your-visit.html#tickets" id="standardTicketBtn">Purchase Now</a>
+            </div>
+          </div>
+
+          <!-- Tickets option 2: Group tickets -->
+          <div class="card">
+            <img src="assets/images/group-tickets.jpg" alt="Group Tickets" />
+            <div class="card-body">
+              <h3>Group Tickets</h3>
+              <span class="price">£24</span><span class="original-price">From £30 .ea</span><span class="discount">20% Off</span>
+              <ul>
+                <li>Group table reservation</li>
+                <li>Skip the queue</li>
+                <li>Complimentary ice bar drinks</li>
+                <li>Guaranteed joint skating slot</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-booking" href="plan-your-visit.html#tickets" id="groupTicketBtn">Purchase Now</a>
+            </div>
+          </div>
+
+          <!-- Tickets option 3: Season pass -->
+          <div class="card">
+            <img src="assets/images/season-pass.jpg" alt="Season Pass" />
+            <div class="card-body">
+              <h3>Season Pass</h3>
+              <span class="price">£240</span><span class="original-price">From £300 .ea</span><span class="discount">20% Off</span>
+              <ul>
+                <li>Skip the entrance queue all season</li>
+                <li>Pay once off at discounted rates</li>
+                <li>Free merchandise</li>
+                <li>Exclusive bathrooms</li>
+                <li>Exclusive seating area</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-booking" href="plan-your-visit.html#tickets" id="seasonTicketBtn">Purchase Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Travel Information -->
+      <section id="travel">
+        <!-- brief intro -->
+        <div class="intro">
+          <h2>Getting to the park</h2>
+          <p class="big-text">
+            We would love to say you could find the park by following your heart, but an address might be more clear cut!
+          </p>
+        </div>
+
+        <div class="body-container">
+          <!-- Left: Three travel information-->
+          <article>
+            <!--Location-->
+            <div>
+              <h3>Location</h3>
+              <p>Located at the heart of London, UK. See map for more detailed location.</p>
+            </div>
+            <!--Opening Hours-->
+            <div>
+              <h3>Opening hours</h3>
+              <p>Open weekly from <time>9:00 AM</time> to <time>6:00 PM</time>. *excluding overnight guests</p>
+            </div>
+            <!--Weather Today-->
+            <div>
+              <h3>Weather today</h3>
+              <a
+                href="https://weather.com/en-GB/weather/today/l/5d3ac36b50e4aa01e9916508005d45eab1dffb15cb59d5b38cce3ca54d24c65d"
+                target="_blank"
+                >Check the weather app in the area for weather reports!</a
+              >
+            </div>
+          </article>
+          <!-- Right: Map embedment-->
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4698742916185!2d-0.13300928437851536!3d51.52294111738799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2e05fa84a1%3A0x35223832b9a7517a!2sUniversity%20of%20London!5e0!3m2!1sen!2ssg!4v1653927932722!5m2!1sen!2ssg"
+              width="99%"
+              height="99%"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: about the park -->
+      <section id="about-park">
+        <!-- brief intro -->
+        <div class="intro">
+          <h2>About the park</h2>
+          <p class="big-text">Your happiness is our success. we would be honoured to have you.</p>
+        </div>
+        <div class="body-container">
+          <figure><img src="assets/images/AboutGoSnow.jpeg" alt="About GoSnow" /></figure>
+          <article>
+            <p>
+              GoSnow is a world-class theme park. We have poured our heart into ensuring that our guests only receive the best care and
+              experience! From ice skating in the flashing lights, to simply walking through the gallery of sculptures we hope to think we
+              have done everything right. This theme park for us is not just our business, but it is our life that we have built from our
+              family’s love and passion of winter activities. We have let our imaginations run free in our ideas, so that you can enjoy our
+              home made ‘breath of fresh air’.
+            </p>
+            <p>
+              We hope to make your stay as inclusive as possible while not restricting you from doing anything. In our eyes, your happiness
+              is our success and that is all that matters to us.
+            </p>
+            <p>
+              GoSnow would be honoured to host you and your friends and family! Our website produces information about our theme park, but
+              please do not hesitate to reach out with any more questions you may have or recommendations.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!--Footer Section 1: logo, contact information, and bottom nav bar-->
+      <div id="footer-main">
+        <!--logo-->
+        <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" /></a>
+
+        <!--contact information-->
+        <span class="small-text">
+          <b>Contact information</b><br />
+          Address: Senate House, Malet St, London WC1E 7HU, UK<br />
+          Phone: +44 20 7862 8000<br />
+          Email:
+          <a href="mailto:CustomerService@GoSnow.com" target="_blank">CustomerService@GoSnow.com</a>
+        </span>
+
+        <!--bottom navigation-->
+        <nav class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn" href="things-to-do.html">Things To Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="plan-your-visit.html">Plan Your Visit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+          </li>
+        </nav>
+      </div>
+
+      <!--Footer Section 2: copyright information-->
+      <div id="copyright-information" class="small-text">
+        <span
+          >Copyrights © 2022 All Rights Reserved by GoSnow.<br />
+          Website Developed By Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury.</span
+        >
+      </div>
+
+      <!--Footer Section 3: bottom Advertisement-->
+      <div id="bottom-ad">
+        <span>Buy tickets today and enjoy 20% off</span>
+        <a class="btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
+      </div>
+    </footer>
+
 		
-		<main>
-			<!--Section 1: Tickets information-->
-			<section id="tickets">
-				<!-- brief intro -->
-				<div class="intro">
-					<h2>Theme Park Entry Tickets</h2>
-					<p class="big-text">Save up to 20% when you book theme park tickets in advance. Explore our range of entry tickets below.</p>
-				</div>
-			
-				<!-- Three columns of tickets options -->
-				<div class="card-container">
-					<!-- Tickets option 1: Standard tickets -->
-					<div class="card">
-						<img src="assets/images/standard-tickets.jpg" alt="Standard Tickets">
-						<div class="card-body">
-							<h3>Standard Tickets</h3>
-							<span class="price">£28</span><span class="original-price">From £35 .ea</span><span class="discount">20% Off</span>
-							<ul>
-								<li>Access for the whole day</li>
-								<li>Access to all activities</li>
-								<li>Free bathroom access</li>
-								<li>Seating area access</li>
-								<li>Free kiddies badge</li>
-							</ul>
-						</div>
-						<div class="card-footer"><a class="btn btn-booking" href="plan-your-visit.html#tickets" id="standardTicketBtn">Purchase Now</a></div>
-					</div>
-			
-					<!-- Tickets option 2: Group tickets -->
-					<div class="card">
-						<img src="assets/images/group-tickets.jpg" alt="Group Tickets">
-						<div class="card-body">
-							<h3>Group Tickets</h3>
-							<span class="price">£24</span><span class="original-price">From £30 .ea</span><span class="discount">20% Off</span>
-							<ul>
-								<li>Group table reservation</li>
-								<li>Skip the queue</li>
-								<li>Complimentary ice bar drinks</li>
-								<li>Guaranteed joint skating slot</li>
-							</ul>
-						</div>
-						<div class="card-footer"><a class="btn btn-booking" href="plan-your-visit.html#tickets" id="groupTicketBtn">Purchase Now</a></div>
-					</div>
-			
-					<!-- Tickets option 3: Season pass -->
-					<div class="card"> 
-						<img src="assets/images/season-pass.jpg" alt="Season Pass">
-						<div class="card-body">
-							<h3>Season Pass</h3>
-							<span class="price">£240</span><span class="original-price">From £300 .ea</span><span class="discount">20% Off</span>
-							<ul>
-								<li>Skip the entrance queue all season</li>
-								<li>Pay once off at discounted rates</li>
-								<li>Free merchandise</li>
-								<li>Exclusive bathrooms</li>
-								<li>Exclusive seating area</li>
-							</ul>
-						</div>
-						<div class="card-footer"><a class="btn btn-booking" href="plan-your-visit.html#tickets" id="seasonTicketBtn">Purchase Now</a></div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Section 2: Travel Information -->
-			<section id="travel">
-				<!-- brief intro -->
-				<div class="intro">
-					<h2>Getting to the park</h2>
-					<p class="big-text">We would love to say you could find the park by following your heart, but an address might be more clear cut!</p>
-				</div>
-			
-				<div class="body-container">
-					<!-- Left: Three travel information-->
-					<article>
-						<!--Location-->
-						<div>
-							<h3>Location</h3>
-							<p>Located at the heart of London, UK. See map for more detailed location.</p>
-						</div>
-						<!--Opening Hours-->
-						<div>
-							<h3>Opening hours</h3>
-							<p>Open weekly from <time>9:00 AM</time> to <time>6:00 PM</time>. *excluding overnight guests</p>
-						</div>
-						<!--Weather Today-->
-						<div>
-							<h3>Weather today</h3>
-							<a href="https://weather.com/en-GB/weather/today/l/5d3ac36b50e4aa01e9916508005d45eab1dffb15cb59d5b38cce3ca54d24c65d" target="_blank">Check the weather app in the area for weather reports!</a>
-						</div>
-					</article>
-					<!-- Right: Map embedment-->
-					<div>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4698742916185!2d-0.13300928437851536!3d51.52294111738799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2e05fa84a1%3A0x35223832b9a7517a!2sUniversity%20of%20London!5e0!3m2!1sen!2ssg!4v1653927932722!5m2!1sen!2ssg" width="99%" height="99%" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
-				</div>
-			<div>
-
-			<!-- Section 3: about the park -->
-			<section id="about-park">
-				<!-- brief intro -->
-				<div class="intro">
-					<h2>About the park</h2>
-					<p class="big-text">Your happiness is our success. we would be honoured to have you.</p>
-				</div>
-				<div class="body-container">
-					<figure><img src="assets/images/AboutGoSnow.jpeg" alt="About GoSnow"></figure>
-					<article>
-						<p>GoSnow is a world-class theme park. We have poured our heart into ensuring that our guests only receive the best care and experience! From ice skating in the flashing lights, to simply walking through the gallery of sculptures we hope to think we have done everything right. This theme park for us is not just our business, but it is our life that we have built from our family’s love and passion of winter activities. We have let our imaginations run free in our ideas, so that you can enjoy our home made ‘breath of fresh air’.</p>
-						<p>We hope to make your stay as inclusive as possible while not restricting you from doing anything. In our eyes, your happiness is our success and that is all that matters to us.</p>
-						<p>GoSnow would be honoured to host you and your friends and family! Our website produces information about our theme park, but please do not hesitate to reach out with any more questions you may have or recommendations. </p>
-					</article>
-				</div>
-			</section>
-		</main>
-
-    	<!-- Footer -->
-    	<footer>
-  <!--Footer Section 1: logo, contact information, and bottom nav bar-->
-  <div id="footer-main">
-    <!--logo-->
-    <a href="index.html"><img src="assets/images/logo.png" alt="GoSnow Logo" /></a>
-
-    <!--contact information-->
-    <span class="small-text">
-      <b>Contact information</b><br />
-      Address: Senate House, Malet St, London WC1E 7HU, UK<br />
-      Phone: +44 20 7862 8000<br />
-      Email:
-      <a href="mailto:CustomerService@GoSnow.com" target="_blank">CustomerService@GoSnow.com</a>
-    </span>
-
-    <!--bottom navigation-->
-    <nav class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link btn" href="things-to-do.html">Things To Do</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link btn" href="plan-your-visit.html">Plan Your Visit</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
-      </li>
-    </nav>
-  </div>
-
-  <!--Footer Section 2: copyright information-->
-  <div id="copyright-information" class="small-text">
-    <span
-      >Copyrights © 2022 All Rights Reserved by GoSnow.<br />
-      Website Developed By Yue Wu, Myo Min Khaing, Paige Goetsch, and Fazley Chowdhury.</span
-    >
-  </div>
-
-  <!--Footer Section 3: bottom Advertisement-->
-  <div id="bottom-ad">
-    <span>Buy tickets today and enjoy 20% off</span>
-    <a class="btn btn-booking" href="plan-your-visit.html#tickets">Book Now</a>
-  </div>
-</footer>
-                
-        
-
-<!-- The Modals -->
-<div id="standardTicketModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span id="fclose" class="close">&times;</span>
-    <h3>Standard Ticket</h3>
-    <b><p id="finalAmount">&pound; 28</p></b>
-    <form onsubmit="boughtStandardTicket()">
-        <div class="col-left">
-            <label for="fticketnumber">No. of Persons:</label>
-        </div>
-        <div class="col-right">
-            <input type="number" id="fticketnumber" name="fticketnumber"  maxlength="4" value="1" onchange="updateFinalAmount(28,this.value)"><br><br>
-        </div>
-        <input type="text" id="fname" name="fname" value="" placeholder="Name"><br><br>
-        <input type="text" id="fccn" name="fccn" required placeholder="CreditCard Number"><br><br>    
-      
-        <input type="password" id="fcvc" name="fcvc" minlegth="3" maxlength="4" required placeholder="CVC/CVV2"><br><br>    
-        
-        <div class="col-left">
-            <label for="fcvc">Expiry:</label>
-        </div>
-        <div class="col-right">
-            <input type="month" id="fexpiry" name="fexpiry" min=""  required>
-        </div>
-        <br><br><br>
-        <input type="submit" value="Pay">
-        <br><br>        
-    </form> 
-      
-  </div>
-
-</div>
-
-    <!-- group ticket modal -->               
-    <div id="groupTicketModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span id="gclose" class="close">&times;</span>
-        <h3>Group Ticket</h3>
-        <b><p id="finalGroupAmount">&pound; 24</p></b>
-        <form onsubmit="boughtGroupTicket()">
-          <div class="col-left">
-                <label for="fgroupticketnumber">No. of Group Tickets(5 persons):</label>
-            </div>
-            <div class="col-right">
-                <input type="number" id="fgroupticketnumber" name="fgroupticketnumber"  maxlength="4" value="1" onchange="updateGroupFinalAmount(this.value)"><br><br>
-            </div>
-            <input type="text" id="fgname" name="fgname" value="" placeholder="Name"><br><br>
-            <input type="text" id="fgccn" name="fgccn" required placeholder="CreditCard Number"><br><br>    
-
-            <input type="password" id="fgcvc" name="fgcvc" minlegth="3" maxlength="4" required placeholder="CVC/CVV2"><br><br>    
-
-            <div class="col-left">
-                <label for="fgcvc">Expiry:</label>
-            </div>
-            <div class="col-right">
-                <input type="month" id="fgexpiry" name="fgexpiry" min=""  required>
-            </div>
-            <br><br><br>
-            <input type="submit" value="Pay">
-            <br><br>        
-        </form> 
-
-      </div>
-    </div>
-
-    
-    <!-- season ticket modal -->               
-    <div id="seasonTicketModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span id="sclose" class="close">&times;</span>
-        <h3>Group Ticket</h3>
-        <b><p id="finalSeasonAmount">&pound; 240</p></b>
-        <form onsubmit="boughtSeasonTicket()">
-          <div class="col-left">
-                <label for="fseasonticketnumber">No. of Season Tickets:</label>
-            </div>
-            <div class="col-right">
-                <input type="number" id="fseasonticketnumber" name="fseasonticketnumber"  maxlength="4" value="1" onchange="updateSeasonFinalAmount(this.value)"><br><br>
-            </div>
-            <input type="text" id="fsname" name="fsname" value="" placeholder="Name"><br><br>
-            <input type="text" id="fsccn" name="fsccn" required placeholder="CreditCard Number"><br><br>    
-
-            <input type="password" id="fscvc" name="fscvc" minlegth="3" maxlength="4" required placeholder="CVC/CVV2"><br><br>    
-
-            <div class="col-left">
-                <label for="fscvc">Expiry:</label>
-            </div>
-            <div class="col-right">
-                <input type="month" id="fsexpiry" name="fsexpiry" min=""  required>
-            </div>
-            <br><br><br>
-            <input type="submit" value="Pay">
-            <br><br>        
-        </form> 
-
-      </div>
-    </div>
-
-    </body>
+  </body>
 </html>
