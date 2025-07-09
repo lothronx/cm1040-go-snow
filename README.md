@@ -35,23 +35,23 @@ _Click the thumbnail above to watch a complete walkthrough of the GoSnow website
 
 Main landing page with hero video and park overview
 
-![Homepage](demo/Homepage.png)
+![Homepage](demo/Homepage.jpeg)
 
 ### **Things To Do** (`things-to-do.html`)
 
 Attractions and activities showcase
 
-![Things to Do](demo/Things-to-do.png)
+![Things to Do](demo/Things-to-do.jpeg)
 
 ### **Plan Your Visit** (`plan-your-visit.html`)
 
 Tickets, services, and visitor information
 
-![Plan Your Visit](demo/Plan-your-visit.png)
+![Plan Your Visit](demo/Plan-your-visit.jpeg)
 
 ### Interactive Booking Modal
 
-![Booking Modal](demo/Booking-modal.png)
+![Booking Modal](demo/Booking-modal.jpeg)
 
 ## 🛠️ Technologies & Skills Demonstrated
 
