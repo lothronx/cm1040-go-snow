@@ -8,6 +8,12 @@ A modern, responsive website for GoSnow - a winter-themed amusement park in Lond
 
 This project was developed as part of the **CM1040 Web Development** coursework at University of London. GoSnow is a fictional theme park website that showcases winter sports activities, attractions, and visitor information with a focus on user experience and modern web design principles.
 
+## 🎬 Live Demo
+
+[![GoSnow Website Demo](https://img.youtube.com/vi/I3ctk699Jcc/0.jpg)](https://youtu.be/I3ctk699Jcc)
+
+_Click the thumbnail above to watch a complete walkthrough of the GoSnow website features and functionality_
+
 ## 🚀 Features
 
 - **Multi-page responsive website** with consistent navigation and branding
@@ -21,9 +27,27 @@ This project was developed as part of the **CM1040 Web Development** coursework 
 
 ## 📱 Pages
 
-1. **Home** (`index.html`) - Main landing page with hero video and park overview
-2. **Things To Do** (`things-to-do.html`) - Attractions and activities showcase
-3. **Plan Your Visit** (`plan-your-visit.html`) - Tickets, services, and visitor information
+### **Home** (`index.html`)
+
+Main landing page with hero video and park overview
+
+![Homepage](demo/Homepage.png)
+
+### **Things To Do** (`things-to-do.html`)
+
+Attractions and activities showcase
+
+![Things to Do](demo/Things-to-do.png)
+
+### **Plan Your Visit** (`plan-your-visit.html`)
+
+Tickets, services, and visitor information
+
+![Plan Your Visit](demo/Plan-your-visit.png)
+
+### Interactive Booking Modal
+
+![Booking Modal](demo/Booking-modal.png)
 
 ## 🛠️ Technologies & Skills Demonstrated
 
@@ -90,10 +114,10 @@ Through this project, I developed and demonstrated proficiency in:
 
 ## 🔧 Setup & Usage
 
-1. Clone the repository
-2. Open `index.html` in your preferred web browser
-3. Navigate through the site using the main navigation menu
-4. Test responsive features by resizing browser window or using mobile devices
+1. Open the project folder in VS Code
+2. Install the "Live Server" extension if you haven't already
+3. Right-click on index.html and select "Open with Live Server"
+4. The webpage will open in your browser automatically
 
 ## 🎨 Design Highlights
 
