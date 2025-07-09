@@ -1,6 +1,7 @@
 # 🎿 GoSnow Theme Park Website
 
 > A modern, responsive website for GoSnow - a winter-themed amusement park in London featuring ice rinks, snowboarding areas, ice sculptures, and family-friendly attractions.
+> 
 > ![GoSnow Logo](assets/images/logo.png)
 
 ## 🛠️ Tech Stack
