@@ -10,9 +10,13 @@ This project was developed as part of the **CM1040 Web Development** coursework 
 
 ## 🎬 Live Demo
 
+<div align="center">
+
 [![GoSnow Website Demo](https://img.youtube.com/vi/I3ctk699Jcc/0.jpg)](https://youtu.be/I3ctk699Jcc)
 
 _Click the thumbnail above to watch a complete walkthrough of the GoSnow website features and functionality_
+
+</div>
 
 ## 🚀 Features
 
